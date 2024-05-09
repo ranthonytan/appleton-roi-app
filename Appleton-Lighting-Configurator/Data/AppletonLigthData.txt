@@ -1,0 +1,819 @@
+{
+  "Led": [
+    {
+      "Name": "Areamaster Generation 2 LED",
+      "ProductPage": "http://www.emerson.com/en-us/catalog/appleton-am-g2-led",
+      "Image": "Areamaster GEN 2 LED with clear lens_IDW",
+      "Description": " (Flood Lighting)",
+      "AreaClassification": "Hazardous",
+      "Model": [
+        {
+          "ModelNo": "AMLGL6",
+          "SystemWattage": "70",
+          "HIDEquivalent": "175W-250W",
+          "NominalLumens": "9500"
+        },
+        {
+          "ModelNo": "AMLGL7",
+          "SystemWattage": "110",
+          "HIDEquivalent": "250W-400W",
+          "NominalLumens": "15000"
+        },
+        {
+          "ModelNo": "AMLGL8",
+          "SystemWattage": "150",
+          "HIDEquivalent": "400W-750W",
+          "NominalLumens": "19500"
+        },
+        {
+          "ModelNo": "AMLHL1",
+          "SystemWattage": "180",
+          "HIDEquivalent": "1000W",
+          "NominalLumens": "24000"
+        },
+        {
+          "ModelNo": "AMLHL2",
+          "SystemWattage": "225",
+          "HIDEquivalent": "1000W-1500W",
+          "NominalLumens": "30000"
+        },
+        {
+          "ModelNo": "AMLHL3",
+          "SystemWattage": "310",
+          "HIDEquivalent": "1500W",
+          "NominalLumens": "38000"
+        }
+      ]
+    },
+	{
+      "Name": "Baymaster LED",
+      "AreaClassification": "Hazardous",
+      "ProductPage": "http://www.emerson.com/en-us/catalog/appleton-haz-bm-led-hb",
+      "Image": "baymaster-1",
+      "Description": "(High Bay Lighting)",
+      "Model": [
+        {
+          "ModelNo": "BLLL6 / BLLPL6",
+          "SystemWattage": "70",
+          "HIDEquivalent": "175W-250W",
+          "NominalLumens": "9500"
+        },
+        {
+          "ModelNo": "BLLL7 / BLLPL7",
+          "SystemWattage": "110",
+          "HIDEquivalent": "250W-400W",
+          "NominalLumens": "15000"
+        },
+        {
+          "ModelNo": "BLLL8 / BLLPL8",
+          "SystemWattage": "150",
+          "HIDEquivalent": "400W-750W",
+          "NominalLumens": "19500"
+        },
+        {
+          "ModelNo": "BHLL1 / BHLPL1",
+          "SystemWattage": "180",
+          "HIDEquivalent": "1000W",
+          "NominalLumens": "24000"
+        },
+        {
+          "ModelNo": "BHLL2 / BHLPL2",
+          "SystemWattage": "225",
+          "HIDEquivalent": "1000W-1500W",
+          "NominalLumens": "30000"
+        },
+        {
+          "ModelNo": "BHLL3 / BHLPL3",
+          "SystemWattage": "310",
+          "HIDEquivalent": "1500W",
+          "NominalLumens": "38000"
+        }
+      ]
+    },
+	 {
+      "Name": "Codemaster LED",
+      "ProductPage": "http://www.emerson.com/en-us/catalog/appleton-cmled",
+      "Image": "CodeMasterCeilingHood",
+      "Description": "(Area / Task Lighting)",
+      "AreaClassification": "Hazardous",
+      "Model": [
+        {
+          "ModelNo": "CMLED70",
+          "SystemWattage": "32",
+          "HIDEquivalent": "70W",
+          "NominalLumens": "2582"
+        },
+        {
+          "ModelNo": "CMLED10",
+          "SystemWattage": "45",
+          "HIDEquivalent": "100W",
+          "NominalLumens": "3967"
+        },
+        {
+          "ModelNo": "CMLED15",
+          "SystemWattage": "58",
+          "HIDEquivalent": "150W",
+          "NominalLumens": "4838"
+        },
+        {
+          "ModelNo": "CMLED17",
+          "SystemWattage": "71",
+          "HIDEquivalent": "175W",
+          "NominalLumens": "6294"
+        },
+        {
+          "ModelNo": "CMLED25",
+          "SystemWattage": "99",
+          "HIDEquivalent": "250W",
+          "NominalLumens": "8982"
+        },
+        {
+          "ModelNo": "CMLED35",
+          "SystemWattage": "108",
+          "HIDEquivalent": "350W",
+          "NominalLumens": "11830"
+        },
+        {
+          "ModelNo": "CMLED40",
+          "SystemWattage": "129",
+          "HIDEquivalent": "400W",
+          "NominalLumens": "13732"
+        }
+      ]
+    },
+	 {
+      "Name": "Contender LED Low Profile",
+      "ProductPage": "http://www.emerson.com/en-us/catalog/appleton-contender-led",
+      "Image": "contender-3",
+      "Description": "(Area / Task Lighting)",
+      "AreaClassification": "Hazardous",
+      "Model": [
+        {
+          "ModelNo": "VMV3L",
+          "SystemWattage": "28",
+          "HIDEquivalent": "70-100W",
+          "NominalLumens": "3300"
+        },
+        {
+          "ModelNo": "VMV4L",
+          "SystemWattage": "38",
+          "HIDEquivalent": "100-150W",
+          "NominalLumens": "4400"
+        },
+        {
+          "ModelNo": "VMV5L",
+          "SystemWattage": "48",
+          "HIDEquivalent": "150-175W",
+          "NominalLumens": "5500"
+        }
+      ]
+    },
+	 {
+      "Name": "FELED",
+      "ProductPage": "http://www.emerson.com/en-us/catalog/appleton-feled",
+      "Image": "FELED-2feet-clear-lens",
+      "Description": "(Area / Task Lighting)",
+      "AreaClassification": "Hazardous",
+      "Model": [
+        {
+          "ModelNo": "FELED3",
+          "SystemWattage": "27",
+          "HIDEquivalent": "No HID Equivalent",
+          "NominalLumens": "2850"
+        },
+        {
+          "ModelNo": "FELED4",
+          "SystemWattage": "32",
+          "HIDEquivalent": "No HID Equivalent",
+          "NominalLumens": "3600"
+        },
+        {
+          "ModelNo": "FELED5",
+          "SystemWattage": "38",
+          "HIDEquivalent": "No HID Equivalent",
+          "NominalLumens": "4650"
+        },
+        {
+          "ModelNo": "FELED7",
+          "SystemWattage": "63",
+          "HIDEquivalent": "No HID Equivalent",
+          "NominalLumens": "7050"
+        }
+      ]
+    },
+	 {
+      "Name": "Mercmaster LED",
+      "ProductPage": "http://www.emerson.com/en-us/catalog/appleton-mmled",
+      "Image": "MMLED_Pendant_Mount",
+      "Description": "(Area / Task Lighting)",
+      "AreaClassification": "Hazardous",
+      "Model": [
+        {
+          "ModelNo": "MLEDN70",
+          "SystemWattage": "35",
+          "HIDEquivalent": "70W",
+          "NominalLumens": "2300"
+        },
+        {
+          "ModelNo": "MLEDN10",
+          "SystemWattage": "47.5",
+          "HIDEquivalent": "100W",
+          "NominalLumens": "3450"
+        },
+        {
+          "ModelNo": "MLEDN15",
+          "SystemWattage": "61",
+          "HIDEquivalent": "150W",
+          "NominalLumens": "4850"
+        },
+        {
+          "ModelNo": "MLEDN17",
+          "SystemWattage": "74",
+          "HIDEquivalent": "175W",
+          "NominalLumens": "6076"
+        },
+        {
+          "ModelNo": "MLEDN25",
+          "SystemWattage": "95.5",
+          "HIDEquivalent": "250W",
+          "NominalLumens": "9455"
+        },
+        {
+          "ModelNo": "MLEDN35",
+          "SystemWattage": "102",
+          "HIDEquivalent": "350W",
+          "NominalLumens": "11425"
+        },
+        {
+          "ModelNo": "MLEDN40",
+          "SystemWattage": "127",
+          "HIDEquivalent": "400W",
+          "NominalLumens": "12850"
+        }
+      ]
+    },
+    {
+      "Name": "Mercmaster LED Gen 3.0",
+      "ProductPage": "http://www.emerson.com/en-us/catalog/appleton-mmled-g3",
+      "Image": "littleprimowpendnthd-clr",
+      "Description": "(Area / Task Lighting)",
+      "AreaClassification": "Hazardous",
+      "Model": [
+        {
+          "ModelNo": "MLGL3",
+          "SystemWattage": "33",
+          "HIDEquivalent": "70W-100W",
+          "NominalLumens": "3500"
+        },
+        {
+          "ModelNo": "MLGL5",
+          "SystemWattage": "51",
+          "HIDEquivalent": "100W-150W",
+          "NominalLumens": "5500"
+        },
+        {
+          "ModelNo": "MLGL7",
+          "SystemWattage": "64",
+          "HIDEquivalent": "175W-250W",
+          "NominalLumens": "7500"
+        },
+        {
+          "ModelNo": "MLGH9",
+          "SystemWattage": "79",
+          "HIDEquivalent": "250W-350W",
+          "NominalLumens": "9500"
+        },
+        {
+          "ModelNo": "MLGH1",
+          "SystemWattage": "99",
+          "HIDEquivalent": "350W-400W",
+          "NominalLumens": "11500"
+        },
+        {
+          "ModelNo": "MLGH3",
+          "SystemWattage": "120",
+          "HIDEquivalent": "400W",
+          "NominalLumens": "14500"
+        },
+        {
+          "ModelNo": "MLGH6",
+          "SystemWattage": "146",
+          "HIDEquivalent": "400W-600W",
+          "NominalLumens": "17500"
+        }
+      ]
+    },
+	{
+      "Name": "Mercmaster LED Low Profile",
+      "ProductPage": "http://www.emerson.com/en-us/catalog/appleton-mmled-lp-haz",
+      "Image": "PendantClr",
+      "Description": "(Area / Task Lighting)",
+      "AreaClassification": "Hazardous",
+      "Model": [
+        {
+          "ModelNo": "MLLED2",
+          "SystemWattage": "28",
+          "HIDEquivalent": "70-100W",
+          "NominalLumens": "3300"
+        },
+        {
+          "ModelNo": "MLLED3",
+          "SystemWattage": "38",
+          "HIDEquivalent": "100-150W",
+          "NominalLumens": "4400"
+        },
+        {
+          "ModelNo": "MLLED4",
+          "SystemWattage": "48",
+          "HIDEquivalent": "150-175W",
+          "NominalLumens": "5500"
+        }
+      ]
+    },
+	 {
+      "Name": "Viamaster LED",
+      "ProductPage": "http://www.emerson.com/en-us/catalog/appleton-vm-led-nec",
+      "Image": "viamster-led-2000-Lumens",
+      "Description": "(Area / Task Lighting)",
+      "AreaClassification": "Hazardous",
+      "Model": [
+        {
+          "ModelNo": "LLED2",
+          "SystemWattage": "22",
+          "HIDEquivalent": "No HID Equivalent",
+          "NominalLumens": "2000"
+        },
+        {
+          "ModelNo": "LLED5",
+          "SystemWattage": "45",
+          "HIDEquivalent": "No HID Equivalent",
+          "NominalLumens": "5000"
+        },
+        {
+          "ModelNo": "LLED7",
+          "SystemWattage": "81",
+          "HIDEquivalent": "No HID Equivalent",
+          "NominalLumens": "7000"
+        }
+      ]
+    },
+    {
+      "Name": "Viamaster LED ATEX/IECEx",
+      "ProductPage": "http://www.emerson.com/en-us/catalog/appleton-vm-led-atex",
+      "Image": "viamster-led-2000-Lumens",
+      "Description": "(Area / Task Lighting)",
+      "AreaClassification": "Hazardous",
+      "Model": [
+        {
+          "ModelNo": "LLEDA2",
+          "SystemWattage": "22",
+          "HIDEquivalent": "No HID Equivalent",
+          "NominalLumens": "2000"
+        },
+        {
+          "ModelNo": "LLEDA5",
+          "SystemWattage": "45",
+          "HIDEquivalent": "No HID Equivalent",
+          "NominalLumens": "5000"
+        },
+        {
+          "ModelNo": "LLEDA7",
+          "SystemWattage": "81",
+          "HIDEquivalent": "No HID Equivalent",
+          "NominalLumens": "7000"
+        }
+      ]
+    },
+    {
+      "Name": "Industrial Areamaster Generation 2 LED",
+      "ProductPage": "http://www.emerson.com/en-us/catalog/appleton-am-g2-led-ind",
+      "Image": "Areamaster GEN 2 LED with clear lens_IDW",
+      "Description": "(Flood Lighting)",
+      "AreaClassification": "NonHazardous",
+      "Model": [
+        {
+          "ModelNo": "IAMLGL6",
+          "SystemWattage": "70",
+          "HIDEquivalent": "175W-250W",
+          "NominalLumens": "9500"
+        },
+        {
+          "ModelNo": "IAMLGL7",
+          "SystemWattage": "110",
+          "HIDEquivalent": "250W-400W",
+          "NominalLumens": "15000"
+        },
+        {
+          "ModelNo": "IAMLGL8",
+          "SystemWattage": "150",
+          "HIDEquivalent": "400W-750W",
+          "NominalLumens": "19500"
+        },
+        {
+          "ModelNo": "IAMLHL1",
+          "SystemWattage": "180",
+          "HIDEquivalent": "1000W",
+          "NominalLumens": "24000"
+        },
+        {
+          "ModelNo": "IAMLHL2",
+          "SystemWattage": "225",
+          "HIDEquivalent": "1000W-1500W",
+          "NominalLumens": "30000"
+        },
+        {
+          "ModelNo": "IAMLHL3",
+          "SystemWattage": "310",
+          "HIDEquivalent": "1500W",
+          "NominalLumens": "38000"
+        }
+      ]
+    },
+    
+   {
+      "Name": "Industrial Baymaster LED",
+	  "AreaClassification":"NonHazardous",
+      "ProductPage": "http://www.emerson.com/en-us/catalog/appleton-ind-bm-led-hb",
+      "Image": "baymaster-1",
+	  "Description": "(High Bay Lighting)",
+      "Model": [
+        {
+          "ModelNo": "IBLLL6 / IBLLPL6",
+          "SystemWattage": "70",
+          "HIDEquivalent": "175W-250W",
+          "NominalLumens": "9500"
+        },
+        {
+          "ModelNo": "IBLLL7 / IBLLPL7",
+          "SystemWattage": "110",
+          "HIDEquivalent": "250W-400W",
+          "NominalLumens": "15000"
+        },
+        {
+          "ModelNo": "IBLLL8 / IBLLPL8",
+          "SystemWattage": "150",
+          "HIDEquivalent": "400W-750W",
+          "NominalLumens": "19500"
+        },
+		{
+          "ModelNo": "IBHLL1 / IBHLPL1",
+          "SystemWattage": "180",
+          "HIDEquivalent": "1000W",
+          "NominalLumens": "24000"
+        },
+        {
+          "ModelNo": "IBHLL2 / IBHLPL2",
+          "SystemWattage": "225",
+          "HIDEquivalent": "1000W-1500W",
+          "NominalLumens": "30000"
+        },
+        {
+          "ModelNo": "IBHLL3 / IBHLPL3",
+          "SystemWattage": "310",
+          "HIDEquivalent": "1500W",
+          "NominalLumens": "38000"
+        }
+      ]
+    },
+    {
+      "Name": "Industrial Mercmaster LED Gen 3.0",
+      "ProductPage": "http://www.emerson.com/en-us/catalog/appleton-ind-mmled-g3",
+      "Image": "bigprimo-pdantmnt-clr",
+      "Description": "(Area / Task Lighting)",
+      "AreaClassification": "NonHazardous",
+      "Model": [
+        {
+          "ModelNo": "IMLGL3",
+          "SystemWattage": "33",
+          "HIDEquivalent": "70W-100W",
+          "NominalLumens": "3500"
+        },
+        {
+          "ModelNo": "IMLGL5",
+          "SystemWattage": "51",
+          "HIDEquivalent": "100W-150W",
+          "NominalLumens": "5500"
+        },
+        {
+          "ModelNo": "IMLGL7",
+          "SystemWattage": "64",
+          "HIDEquivalent": "175W-250W",
+          "NominalLumens": "7500"
+        },
+        {
+          "ModelNo": "IMLGH9",
+          "SystemWattage": "79",
+          "HIDEquivalent": "250W-350W",
+          "NominalLumens": "9500"
+        },
+        {
+          "ModelNo": "IMLGH1",
+          "SystemWattage": "99",
+          "HIDEquivalent": "350W-400W",
+          "NominalLumens": "11500"
+        },
+        {
+          "ModelNo": "IMLGH3",
+          "SystemWattage": "120",
+          "HIDEquivalent": "400W",
+          "NominalLumens": "14500"
+        },
+        {
+          "ModelNo": "IMLGH6",
+          "SystemWattage": "146",
+          "HIDEquivalent": "400W-600W",
+          "NominalLumens": "17500"
+        }
+      ]
+    },
+    
+    {
+      "Name": "Industrial Mercmaster LED Low Profile",
+      "ProductPage": "http://www.emerson.com/en-us/catalog/appleton-ind-mmled",
+      "Image": "PendantClr",
+      "Description": "(Area / Task Lighting)",
+      "AreaClassification": "NonHazardous",
+      "Model": [
+        {
+          "ModelNo": "IMLLED2",
+          "SystemWattage": "28",
+          "HIDEquivalent": "70-100W",
+          "NominalLumens": "3300"
+        },
+        {
+          "ModelNo": "IMLLED3",
+          "SystemWattage": "38",
+          "HIDEquivalent": "100-150W",
+          "NominalLumens": "4400"
+        },
+        {
+          "ModelNo": "IMLLED4",
+          "SystemWattage": "48",
+          "HIDEquivalent": "150-175W",
+          "NominalLumens": "5500"
+        }
+      ]
+    }
+   
+  ],
+  "ExistingLampLife": [
+    {
+      "LampType": "Compact Fluorescent",
+      "LampLife": "12000"
+    },
+    {
+      "LampType": "High Pressure Sodium",
+      "LampLife": "24000"
+    },
+    {
+      "LampType": "Incandescent",
+      "LampLife": "1000"
+    },
+    {
+      "LampType": "Induction",
+      "LampLife": "100000"
+    },
+    {
+      "LampType": "LED",
+      "LampLife": "60000"
+    },
+    {
+      "LampType": "Mercury Vapor",
+      "LampLife": "20000"
+    },
+    {
+      "LampType": "Metal Halide",
+      "LampLife": "20000"
+    },
+    {
+      "LampType": "Pulse Start Metal Halide",
+      "LampLife": "20000"
+    },
+    {
+      "LampType": "T5 Fluorescent",
+      "LampLife": "24000"
+    },
+    {
+      "LampType": "T5 HO Fluorescent",
+      "LampLife": "30000"
+    },
+    {
+      "LampType": "T8 Fluorescent",
+      "LampLife": "24000"
+    },
+    {
+      "LampType": "T12 Fluorescent",
+      "LampLife": "18000"
+    }
+  ],
+  "Currency": [
+    {
+      "ISOCode": "ARS ($)",
+      "Symbol": "$"
+    },
+    {
+      "ISOCode": "AUD ($)",
+      "Symbol": "$"
+    },
+    {
+      "ISOCode": "BHD (.د.ب)",
+      "Symbol": ".د.ب"
+    },
+    {
+      "ISOCode": "BWP (P)",
+      "Symbol": "P"
+    },
+    {
+      "ISOCode": "BRL (R$)",
+      "Symbol": "R$"
+    },
+    {
+      "ISOCode": "GBP (£ )",
+      "Symbol": "£"
+    },
+    {
+      "ISOCode": "BND ($)",
+      "Symbol": "$"
+    },
+    {
+      "ISOCode": "BGN (лв)",
+      "Symbol": "лв"
+    },
+    {
+      "ISOCode": "CAD ($)",
+      "Symbol": "$"
+    },
+    {
+      "ISOCode": "CLP ($)",
+      "Symbol": "$"
+    },
+    {
+      "ISOCode": "CNY (元)",
+      "Symbol": "元"
+    },
+    {
+      "ISOCode": "COP ($)",
+      "Symbol": "$"
+    },
+    {
+      "ISOCode": "HRK (kn)",
+      "Symbol": "kn"
+    },
+    {
+      "ISOCode": "CZK (Kč)",
+      "Symbol": "Kč"
+    },
+    {
+      "ISOCode": "DKK (kr)",
+      "Symbol": "kr"
+    },
+    {
+      "ISOCode": "EUR (€)",
+      "Symbol": "€"
+    },
+    {
+      "ISOCode": "HKD ($)",
+      "Symbol": "$"
+    },
+    {
+      "ISOCode": "HUF (Ft)",
+      "Symbol": "Ft"
+    },
+    {
+      "ISOCode": "ISK (kr)",
+      "Symbol": "kr"
+    },
+    {
+      "ISOCode": "IDR (Rp)",
+      "Symbol": "Rp"
+    },
+    {
+      "ISOCode": "ILS (₪)",
+      "Symbol": "₪"
+    },
+    {
+      "ISOCode": "JPY (¥)",
+      "Symbol": "¥"
+    },
+    {
+      "ISOCode": "KZT (₸)",
+      "Symbol": "₸"
+    },
+    {
+      "ISOCode": "KWD (د.ك)",
+      "Symbol": "د.ك"
+    },
+    {
+      "ISOCode": "LYD (ل.د)",
+      "Symbol": "ل.د"
+    },
+    {
+      "ISOCode": "MYR (RM)",
+      "Symbol": "RM"
+    },
+    {
+      "ISOCode": "MUR (₨)",
+      "Symbol": "₨"
+    },
+    {
+      "ISOCode": "MXN ($)",
+      "Symbol": "$"
+    },
+    {
+      "ISOCode": "NPR (₨)",
+      "Symbol": "₨"
+    },
+    {
+      "ISOCode": "NZD ($)",
+      "Symbol": "$"
+    },
+    {
+      "ISOCode": "NOK (kr)",
+      "Symbol": "kr"
+    },
+    {
+      "ISOCode": "OMR (ر.ع.)",
+      "Symbol": "ر.ع."
+    },
+    {
+      "ISOCode": "PKR (₨)",
+      "Symbol": "₨"
+    },
+    {
+      "ISOCode": "PHP (₱)",
+      "Symbol": "₱"
+    },
+    {
+      "ISOCode": "PLN (zł)",
+      "Symbol": "zł"
+    },
+    {
+      "ISOCode": "QAR (ر.ق)",
+      "Symbol": "ر.ق"
+    },
+    {
+      "ISOCode": "RON (lei)",
+      "Symbol": "lei"
+    },
+    {
+      "ISOCode": "RUB (₽)",
+      "Symbol": "₽"
+    },
+    {
+      "ISOCode": "SAR (ر.س)",
+      "Symbol": "ر.س"
+    },
+    {
+      "ISOCode": "SGD ($)",
+      "Symbol": "$"
+    },
+    {
+      "ISOCode": "ZAR (R)",
+      "Symbol": "R"
+    },
+    {
+      "ISOCode": "KRW (₩)",
+      "Symbol": "₩"
+    },
+    {
+      "ISOCode": "LKR (Rs)",
+      "Symbol": "Rs"
+    },
+    {
+      "ISOCode": "SEK (kr)",
+      "Symbol": "kr"
+    },
+    {
+      "ISOCode": "CHF (Fr)",
+      "Symbol": "Fr"
+    },
+    {
+      "ISOCode": "TWD ($)",
+      "Symbol": "$"
+    },
+    {
+      "ISOCode": "THB (฿)",
+      "Symbol": "฿"
+    },
+    {
+      "ISOCode": "TTD ($)",
+      "Symbol": "$"
+    },
+    {
+      "ISOCode": "TRY (₺)",
+      "Symbol": "₺"
+    },
+    {
+      "ISOCode": "AED (د.إ)",
+      "Symbol": "د.إ"
+    },
+    {
+      "ISOCode": "USD ($)",
+      "Symbol": "$"
+    },
+    {
+      "ISOCode": "VEF (Bs)",
+      "Symbol": "Bs"
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+.panel-heading {
+    background-color: #004b8d !important;
+    color: white !important;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 0px;
+}
+
+.slider-wrapper {
+    background-color: white;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-inner {
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slide {
+    display: inline-block;
+    width: 100%;
+    float: left;
+}
+
+.panel-body {
+    background-color: #c4ced1;
+}
+
+.modal {
+    z-index: 999999;
+}
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #dee6ea;
+}
+
+    /* Style the buttons inside the tab */
+    div.tab button {
+        background-color: #7b9baa;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        color: white;
+    }
+
+        /* Change background color of buttons on hover */
+        div.tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        div.tab button.active {
+            background-color: #2d383f;
+            color: white;
+        }
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.btn {
+    border-radius: 0px;
+    font-size: 13px;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #00aa7e;
+    border-color: #00aa7e;
+}
+
+.form-control {
+    border-radius: 0px;
+}
+
+.resultTable {
+    background-color: #7b9baa;
+    color: white;
+}
+
+.inp {
+    margin: 10px;
+    padding-top: 10px;
+}
+
+.dd-select {
+    width: 200px !important;
+}
+
+#ddlLedSeries {
+    width: 200px !important;
+}
+
+.dd-selected-image {
+    width: 50px;
+    height: 50px;
+}
+
+.dd-option-image {
+    width: 50px;
+    height: 50px;
+}
+
+.dd-selected-text {
+    width: 9em;
+}
+
+.dd-option-text {
+    width: 11em;
+}
+
+.dd-options {
+    height: 250px;
+}
+
+.dd-option-description {
+    margin-top: -15px !important;
+    margin-left: 65px !important;
+}
+
+.envValContainer {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.evsValue {
+    float: right;
+    width: 30%;
+}
+
+.updateInfo {
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+.appletonContainerCalculation .container {
+    margin-top: 18px;
+}
+
+
+input[type=button], input[type=reset], input[type=submit], button {
+    min-width: 6em;
+    margin-left: 10px;
+    font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+}
+/*.row {
+    width: 99%;
+}*/
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+.row {
+    margin-right: 0px;
+}
+
+.close {
+    min-width: 20px !important;
+}

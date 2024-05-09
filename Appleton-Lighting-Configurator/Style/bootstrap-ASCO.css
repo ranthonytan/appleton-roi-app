@@ -1,0 +1,1001 @@
+﻿/*****************  Desktop  ******************/
+@media (min-width: 768px) {
+    /*fix ribbon back to normal*/
+    #suiteBar {
+        display: table-row;
+        height: 30px;
+    }
+
+
+    h1 {
+        margin: 0em 0;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif !important;
+        color: #333333;
+    }
+
+    .ms-core-listMenu-horizontalBox li {
+        color: #000000;
+    }
+
+    /* Link tag in dropdown nav */
+    ul.dynamic .ms-core-listMenu-item {
+        background-color: #ededed;
+    }
+
+    /* Hover state for links in the dropdown navigation */
+    /*
+ul.dynamic .ms-core-listMenu-item:hover {
+	background-color:#ededed;
+}
+ul.dynamic .ms-core-listMenu-item span:hover {
+	color:#0a86c9;
+}
+*/
+    .ms-core-listMenu-horizontalBox > ul span {
+        color: #004B8D;
+        text-transform: uppercase;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .ms-core-listMenu-horizontalBox ul.dynamic span {
+        text-transform: capitalize;
+        font-family: arial;
+        font-size: 14px;
+        font-weight: normal;
+        color: black;
+    }
+
+    .ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
+        background-image: none;
+    }
+    /*
+#DeltaTopNavigation ul li a:hover{
+	background-color:#004b8d;
+	color:#ffffff;
+}
+#DeltaTopNavigation ul li a:hover span{
+	background-color:#004b8d;
+	color:#ffffff;
+}
+*/
+    #DeltaTopNavigation ul span {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+
+    #DeltaTopNavigation ul li .selected {
+        background-color: #fff;
+        color: #004B8D;
+    }
+
+        #DeltaTopNavigation ul li .selected span {
+            color: #004B8D;
+        }
+
+    .showRefiners {
+        display: none;
+    }
+    /*
+*/
+    #DeltaTopNavigation .ms-core-listMenu-root, .headtitle {
+        display: none !important;
+    }
+
+    .col-lg-2 .ms-core-listMenu-verticalBox ul {
+        list-style-type: none;
+        padding-left: 1px;
+    }
+
+    .col-lg-2 .ms-core-listMenu-verticalBox > .ms-core-listMenu-item, .ms-core-listMenu-verticalBox li.static > .ms-core-listMenu-item {
+        padding-left: 0px;
+        color: #4D4D4D;
+        font-size: 11px;
+        font-family: Arial;
+    }
+
+    .col-lg-2 .ms-core-listMenu-verticalBox ul .selected {
+        background-color: transparent;
+    }
+
+    #footer {
+        background-color: #e5e5e5;
+    }
+
+    #bottomGradient {
+        height: 13px;
+        background: -webkit-linear-gradient(black, white); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(black, white); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(black, white); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(black, white); /* Standard syntax (must be last) */
+        opacity: 0.1;
+        filter: alpha(opacity=10); /* For IE8 and earlier */
+    }
+
+    #asco-bottom {
+        background-color: #ffffff;
+        margin-left: auto;
+        margin-right: auto;
+        width: 980px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-family: Arial;
+        font-size: 9px;
+        color: #808080;
+    }
+
+    .asco-bottom-content {
+        vertical-align: middle;
+        float: left;
+        margin-top: 35px;
+    }
+
+    .asco-bottom-emerson {
+        float: right;
+        margin-bottom: 20px;
+    }
+
+        .asco-bottom-emerson img {
+            width: 135px;
+            height: auto;
+        }
+
+    .ASCO-signIn a:link, .ASCO-signIn a:visited, ASCO-signIn a:active {
+        color: #ffffff;
+    }
+
+    #header .container {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 980px;
+        max-width: 980px;
+    }
+
+    .ms-siteicon-img {
+        width: 138px;
+        width: 174px;
+        height: auto;
+        padding-left: 11px;
+    }
+
+    * [class^="col-"] .ms-siteicon-img,
+    a.ms-siteicon-a {
+        max-width: inherit;
+        max-height: inherit;
+    }
+}
+/*****************  Mobile  ******************/
+@media (max-width: 768px) {
+    #ACI_Carousel {
+        display: none;
+    }
+
+    .ms-srch-sb {
+        width: 100%;
+    }
+
+    #ASCO_SearchBox {
+        display: none;
+    }
+
+    .searchbox, .pull-right {
+        float: left;
+    }
+
+    .pull-right {
+        float: left !important;
+    }
+
+    .ms-srch-sb, .searchbox {
+        width: 100%;
+    }
+
+    #main hr {
+        display: none;
+    }
+
+    .asco_series_layout_left {
+        display: none;
+        width: 0%;
+    }
+
+    .asco_series_layout_right {
+        float: left;
+        width: 100%;
+    }
+
+    #asco-bottom {
+        display: none;
+    }
+
+    #footerMenuContainer {
+        display: none;
+    }
+
+    #SearchBox {
+        background-color: #fff;
+        text-align: right;
+    }
+
+    .ms-srch-sb input {
+        float: left;
+        width: 85%;
+        margin-top: 2px;
+    }
+
+    .ms-srch-sb-searchLink {
+        float: right;
+        background-image: url('../img/searchsmall.png');
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+    }
+
+    .ms-srch-sb-navLink {
+        background-color: #fff;
+        background-image: url('/_layouts/15/images/searchresultui.png');
+        background-position: -6px -6px;
+        /*
+	  left:30px;
+	*/
+    }
+
+    #ms-designer-ribbon {
+        display: none;
+    }
+
+    .mdd-menubar {
+        display: none;
+    }
+
+    /* UPDATE - RESPONSIVE SKU - Mobile */
+    .ASCO-SKU-WPs {
+        margin-left: 10%;
+    }
+
+    /**** Search Page Responsive enhancements*****/
+    .asco_series_layout_right {
+        width: 100% !important;
+    }
+
+    .ms-srch-item {
+        width: auto !important;
+    }
+
+    .ms-srch-item-body {
+        overflow: visible !important;
+        display: block !important;
+    }
+
+    h3.ms-srch-ellipsis {
+        white-space: normal !important;
+    }
+
+    .ms-srch-item-path {
+        width: auto !important;
+    }
+}
+
+/************* Carousel MockUp ***************/
+.ACI_Carousel_Text {
+    padding-bottom: 1px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 0.5px;
+    background-color: #3C423C;
+    color: white;
+    font-family: arial;
+    font-weight: normal;
+}
+
+    .ACI_Carousel_Text h2 {
+        color: white;
+        font-family: arial;
+        font-weight: bold;
+    }
+
+    .ACI_Carousel_Text:hover {
+        border: 2px solid green;
+        padding: 5px;
+        margin: 2px;
+    }
+
+.ACI_Carousel_Text_Top {
+    background-color: #0a86c9;
+    margin-top: 3px;
+}
+
+#ACI_Carousel td {
+    border-collapse: collapse;
+    border: none !important;
+    padding: 0px;
+}
+
+#ACI_Carousel {
+    width: 100%;
+}
+
+#ACI_Carousel_img img {
+    width: 100%;
+    /* height: 300px; */
+}
+/************* Carousel MockUp ***************/
+#footer .container {
+    background-color: #e5e5e5;
+}
+
+#footerContainer {
+    background-color: rgb(245, 245, 245);
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.footerLi {
+    /*
+	margin:25px;
+	*/
+    padding-right: 10px;
+}
+
+.header {
+    margin-top: 0px;
+}
+
+.navbar {
+    margin: 0px;
+}
+
+.navbar-inner, #topnavbar {
+    background-color: white;
+    border-width: 0px;
+    border-style: none;
+}
+
+.navbar-inner {
+    margin-top: 5px;
+}
+
+
+#main hr {
+    margin: 0px;
+}
+
+.carousel_overlay {
+    background-color: fuchsia;
+    opacity: 0.40;
+    filter: alpha(opacity=40);
+    z-index: 9000;
+    float: left;
+}
+
+
+
+#DeltaPlaceHolderLeftNavBar {
+    padding: 0px;
+    width: 200px;
+}
+
+#DeltaSiteLogo {
+    padding-right: 40px;
+}
+
+.asco-header-links {
+    font-size: 10px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #808080;
+    text-transform: uppercase;
+    padding: 5px;
+    padding-left: 20px;
+    float: left;
+}
+
+    .asco-header-links a, .asco-header-links a:visited, .asco-header-links a:active, .asco-header-links a:link {
+        color: inherit;
+    }
+
+#countrySelect {
+    font-size: 11px;
+}
+
+.asco-top-icons {
+    padding: 5px;
+    float: left;
+}
+
+.asco-top-login {
+    background-image: url('../img/login.png' );
+    background-repeat: no-repeat;
+    padding-left: 23px;
+    width: 125px;
+    color: #fff;
+    height: 30px;
+    padding-top: 8px;
+    font-size: 13px !important;
+    margin-right: 30px;
+}
+
+    .asco-top-login a:link, .asco-top-login a:visited, .asco-top-login a:active {
+        color: #fff;
+        font-size: 13px !important;
+    }
+
+.asco-top-lang {
+    padding-left: 10px;
+}
+
+    .asco-top-lang span {
+        padding-left: 5px;
+    }
+
+#sideNavBox {
+    display: none;
+}
+
+#topGradient {
+    height: 50px;
+    background: -webkit-linear-gradient(black, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, white); /* Standard syntax (must be last) */
+    opacity: 0.1;
+    filter: alpha(opacity=10); /* For IE8 and earlier */
+}
+
+#topnavbar div {
+    margin-top: 5px;
+}
+
+#mySearch {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+    #mySearch input {
+        width: 150px !important;
+    }
+/************ Tier 1 Pages **********/
+.asco-section-title {
+    font-size: 30px;
+    color: #333333;
+}
+
+.asco-page-title {
+    font-size: 23px;
+    color: #333333;
+}
+
+.asco-sub-intro {
+    font-size: 18px;
+    color: #004784;
+}
+
+.Tier-One-Img {
+    float: right !important;
+    position: relative;
+    text-align: right;
+}
+
+@media (max-width: 769px) {
+    .Tier-One-Img {
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .Tier-One-Img {
+        width: 49%;
+        margin-right: -20px;
+        padding-right: 0px;
+    }
+}
+
+@media (min-width:992px) {
+    .Tier-One-Img {
+        width: 49%;
+        margin-right: -20px;
+        padding-right: 0px;
+    }
+}
+
+@media (min-width:1200px) {
+    .Tier-One-Img {
+        width: 46%;
+        margin-right: 8px;
+        padding-right: 0px;
+    }
+}
+
+.ms-formfieldlabel {
+    color: #004784;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.asco-sub-intro textarea {
+    height: 100px;
+    min-width: 450px;
+}
+
+.asco-page-title input {
+    min-width: 450px;
+}
+
+.asco-content .ms-rte-border {
+    border: 1px #ababab solid;
+    width: 100%;
+}
+
+.image-map {
+    background: url('/Style Library/Images/social2.png');
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 17px;
+    float: left;
+    position: relative;
+    margin-top: 0px;
+    float: left;
+    margin-top: 5px;
+}
+
+    .image-map > a.map {
+        position: absolute;
+        display: block;
+    }
+
+.dpmContainer {
+    width: 450px;
+    float: right;
+    padding: 10px;
+}
+
+.dpmLeft {
+    float: left;
+    text-align: right;
+}
+
+.dpmright {
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    float: right;
+    background-color: #00833e;
+    padding: 20px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+}
+
+    .dpmright a:link, .dpmright a:visited, .dpmright a:active {
+        color: #FFFFFF;
+        font-size: 12pt;
+    }
+
+#MSOTlPn_MainTD {
+    position: relative;
+    z-index: 1;
+}
+
+.resourceList .cbs-Item1 {
+    padding-bottom: 5px;
+}
+
+ul.resourceList {
+    list-style-type: disc;
+    padding-left: 15px;
+}
+
+#asco-industries ul, #asco-applications ul {
+    list-style-position: inside;
+    padding-left: 0px;
+}
+
+.subsection-ASCO_Home > a:active, .subsection-ASCO_Home > a:link, .subsection-ASCO_Home > a:visited {
+    color: #ffffff !important;
+}
+
+.subsection-ASCO_Home ul a {
+    color: #0472bc;
+}
+
+.asco-questions {
+    float: left;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+}
+
+.asco-questions-span1 {
+    font-size: 11pt;
+    color: #4d4d4d;
+    text-transform: uppercase;
+}
+
+.asco-questions-span2 {
+    font-size: 20pt;
+    color: #0472bc;
+    font-weight: bold;
+}
+
+.ASCO-chatnow {
+    background-image: url('../img/series_chat.png');
+    background-repeat: no-repeat;
+    float: right;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 46px;
+    height: 38px;
+}
+
+.ASCO-SKU-WPs .ms-webpart-chrome-title span {
+    color: #4d4d4d;
+    text-transform: uppercase;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ms-webpart-chrome-title span {
+    color: #4d4d4d;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-sarif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ASCO-SKU-WPs a:link, .ASCO-SKU-WPs a:visited {
+    color: #0472bb;
+    font-size: 12px;
+}
+
+.ASCO-SKU-WPs {
+    color: #0472bb;
+    font-size: 12px;
+}
+
+.ASCO-Search-Refinement .ms-ref-unselSec img, .ASCO-Search-Refinement .ms-ref-selSec img {
+    padding: 3px;
+}
+
+.ASCO-Search-Refinement .ms-ref-unselSec div, .ASCO-Search-Refinement .ms-ref-selSec div {
+    padding: 5px;
+    font-family: Arial;
+    font-size: 11px;
+    color: #4d4d4d;
+}
+
+.ASCO-Search-Refinement a:link {
+    color: #4d4d4d;
+    font-size: 18px;
+}
+
+.ASCO-Search-Refinement .ms-ref-unselSec a:link, .ASCO-Search-Refinement .ms-ref-selSec a:link {
+    color: #4d4d4d;
+    font-size: 11px;
+}
+
+.ms-srchnav a {
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.ms-srchnav .ms-srchnav-link {
+    color: #4d4d4d;
+}
+
+.ms-srchnav .ms-srchnav-link-selected {
+    font-family: Arial;
+    color: #0472bc;
+}
+
+.ms-srch-item-summary {
+    font-size: 14px;
+    font-family: Arial;
+    color: #808080;
+}
+
+.ms-srch-ellipsis a {
+    font-size: 20px;
+    font-family: Arial;
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+.ms-srch-item-path {
+    font-size: 14px;
+    font-family: Arial;
+    color: #0472bb;
+}
+
+.asco_series_layout_left .ms-webpart-chrome-title span {
+    font-size: 18px;
+    font-family: Arial;
+    color: #004784;
+}
+
+.features ul {
+    padding-left: 15px;
+}
+
+.asco-popup-applications, .asco-popup-resources {
+    height: 150px;
+    /*overflow:hidden;*/
+    overflow: auto;
+    min-width: 180px;
+}
+
+.ASCO-SKU-Image {
+    width: 220px;
+    max-height: 250px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+    .ASCO-SKU-Image div {
+        width: 250px;
+        max-height: 200px;
+    }
+
+.asco-sku-questions .asco-questions {
+    text-align: left;
+}
+
+.asco-sku-questions .ASCO-chatnow {
+    float: left;
+}
+
+
+.asco_series_layout_left {
+    min-height: 50px !important;
+}
+
+.ASCO-Series-Review {
+    margin-left: 15px;
+}
+
+.pr-snippet-wrapper, .pr-snippet-stars, .pr-snippet-stars {
+    padding-left: 0px;
+}
+
+/*Search Pagation Img ovverride*/
+.ms-promlink-button-image img {
+    max-width: none !important;
+}
+/*Search Box Img Fix*/
+.ms-srch-sb > .ms-srch-sb-navLink {
+    height: 20px !important;
+}
+
+/*Paging buttons*/
+.ms-srch-result #PagingSelf a {
+    color: #333333 !important;
+    border: 1px solid #cacaca;
+    background-color: white;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, gainsboro));
+    background: -webkit-linear-gradient(top, white 0%, gainsboro 100%);
+    background: -moz-linear-gradient(top, white 0%, gainsboro 100%);
+    background: -ms-linear-gradient(top, white 0%, gainsboro 100%);
+    background: -o-linear-gradient(top, white 0%, gainsboro 100%);
+    background: linear-gradient(to bottom, white 0%, gainsboro 100%);
+    margin: 0px;
+    padding: 1px 7px 4px 8px;
+    position: relative;
+    top: 1px;
+    font-weight: bold;
+}
+
+#Pagingtop a {
+    color: #333333 !important;
+    margin: 0px;
+    padding: 1px 7px 4px 8px;
+    position: relative;
+    top: 1px;
+}
+
+#SelfLink_1, #SelfLink_2, #SelfLink_3, #SelfLink_4, #SelfLink_5, #SelfLink_6, #SelfLink_7, #SelfLink_8, #SelfLink_9, #SelfLink_10, #SelfLink_11, #SelfLink_12, #SelfLink_13, #SelfLink_14, #SelfLink_14, #SelfLink_15, #SelfLink_16, #SelfLink_17, #SelfLink_18, #SelfLink_19, #SelfLink_20, #SelfLink_21, #SelfLink_22, #SelfLink_23, #SelfLink_24, #SelfLink_25, #SelfLink_26, #SelfLink_27, #SelfLink_28, #SelfLink_29, #SelfLink_30, #SelfLink_31, #SelfLink_32, #SelfLink_33, #SelfLink_34, #SelfLink_35, #SelfLink_36, #SelfLink_37, #SelfLink_38, #SelfLink_39, #SelfLink_40, #SelfLink_41, #SelfLink_42, #SelfLink_43, #SelfLink_44, #SelfLink_45, #SelfLink_46, #SelfLink_47, #SelfLink_48, #SelfLink_49, #SelfLink_50, #SelfLink_51, #SelfLink_52, #SelfLink_53, #SelfLink_54, #SelfLink_55, #SelfLink_56, #SelfLink_57, #SelfLink_58, #SelfLink_59, #SelfLink_60, #SelfLink_61, #SelfLink_62, #SelfLink_63, #SelfLink_64, #SelfLink_65, #SelfLink_66, #SelfLink_67, #SelfLink_68, #SelfLink_69, #SelfLink_70, #SelfLink_71, #SelfLink_72, #SelfLink_73, #SelfLink_74, #SelfLink_75, #SelfLink_76, #SelfLink_77, #SelfLink_78, #SelfLink_79, #SelfLink_80, #SelfLink_81, #SelfLink_82, #SelfLink_83, #SelfLink_84, #SelfLink_85, #SelfLink_86, #SelfLink_87, #SelfLink_88, #SelfLink_89, #SelfLink_90, #SelfLink_91, #SelfLink_92, #SelfLink_93, #SelfLink_94, #SelfLink_95, #SelfLink_96, #SelfLink_97, #SelfLink_98, #SelfLink_99, #SelfLink_100, #SelfLink_101, #SelfLink_102, #SelfLink_103, #SelfLink_104, #SelfLink_105, #SelfLink_106, #SelfLink_107, #SelfLink_108 {
+    color: #333333 !important;
+    border: 1px solid #cacaca;
+    margin: 0px;
+    padding: 1px 7px 4px 8px;
+    position: relative;
+    top: 1px;
+    font-weight: bold;
+    background-color: white;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, gainsboro));
+    background: -webkit-linear-gradient(top, white 0%, gainsboro 100%);
+    background: -moz-linear-gradient(top, white 0%, gainsboro 100%);
+    background: -ms-linear-gradient(top, white 0%, gainsboro 100%);
+    background: -o-linear-gradient(top, white 0%, gainsboro 100%);
+    background: linear-gradient(to bottom, white 0%, gainsboro 100%);
+}
+
+
+.ms-srch-result a:hover {
+    color: white !important;
+    border: 1px solid #111111;
+    background-color: #585858;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #585858), color-stop(100%, #111111));
+    background: -webkit-linear-gradient(top, #585858 0%, #111111 100%);
+    background: -moz-linear-gradient(top, #585858 0%, #111111 100%);
+    background: -ms-linear-gradient(top, #585858 0%, #111111 100%);
+    background: -o-linear-gradient(top, #585858 0%, #111111 100%);
+    background: linear-gradient(to bottom, #585858 0%, #111111 100%);
+}
+
+#PagingImageLink a:hover, #PagingLink a:hover {
+    color: #333333 !important;
+    border: 1px solid #cacaca;
+    background-color: white;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, gainsboro));
+    background: -webkit-linear-gradient(top, white 0%, gainsboro 100%);
+    background: -moz-linear-gradient(top, white 0%, gainsboro 100%);
+    background: -ms-linear-gradient(top, white 0%, gainsboro 100%);
+    background: -o-linear-gradient(top, white 0%, gainsboro 100%);
+    background: linear-gradient(to bottom, white 0%, gainsboro 100%);
+    margin: 0px;
+    padding: 1px 7px 4px 8px;
+    position: relative;
+    top: 1px;
+    font-weight: bold;
+}
+
+.ms-promlink-button {
+    border-style: none !important;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right,#ccc,#0072c6,#ccc);
+    margin-bottom: 15px !important;
+    margin-top: 5px;
+}
+
+.searchbox .ms-srch-sb > .ms-srch-sb-searchLink {
+    height: 22px !important;
+}
+
+.searchbox .ms-srch-sb {
+    height: 22px !important;
+}
+
+.popup_content {
+    height: auto !important;
+}
+
+.anchor-containter img {
+    max-width: 180px;
+}
+
+#Carousel_Item_Title a {
+    font-size: 14px !important;
+    font-weight: bold;
+}
+
+#Carousel_Item_Info p {
+    min-height: 65px;
+}
+
+a.Carousel_Left_Nav_Item:visited {
+    background-color: transparent !important;
+    color: #00477f !important;
+}
+
+a.Carousel_Left_Nav_Item:hover, a.Carousel_Left_Nav_Item:active {
+    background-color: transparent !important;
+    color: #00477f !important;
+}
+
+a.Carousel_Left_Nav_Header:hover, a.Carousel_Left_Nav_Header:active {
+    background-color: transparent !important;
+    color: #00477f !important;
+}
+
+a.Carousel_Left_Nav_Header:link {
+    color: #00477f !important;
+}
+
+
+
+.elastislide-wrapper {
+    box-shadow: none !important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    ;
+}
+
+.asco-content p {
+    font-size: 14px !important;
+}
+
+#ASCO_Resources_Links {
+    border: 1px solid #ccc;
+    height: 30px;
+    padding-top: 0px !important;
+    padding-left: 10px !important;
+    background-color: #fff !important;
+    border-radius: 4px;
+    padding-right: 10px !important;
+}
+
+#Carousel_Item_Info_More {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.asco-section-title {
+    border-bottom: 2px solid #ccc;
+}
+
+#Carousel_Left_Nav {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.ms-ref-ellipsis::after, a.tooltip, a.tooltip span {
+    background-color: #00a69c !important;
+    color: white !important;
+}
+
+.col-sm-2 ul li {
+    margin-left: 0px !important;
+}
+
+/*Features webpart text wrapping */
+#ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField > ul > li {
+    word-wrap: break-word;
+}
+
+#ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField > ul {
+    max-width: 247px;
+    width: 247px;
+}
+
+#ctl00_ctl50_g_60a34dd4_2b5a_4419_9c7d_46244c1dbbd4 {
+    height: 0px !important;
+}
+
+/* Override "Features" section of Series pages. Tablet View responsive issue */
+.features #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField > ul {
+    max-width: none !important;
+    width: auto;
+}
+
+/*To fix the wobbling image isssue on product and series pages*/
+.ASCO-Product-Row-LinkAnchor:hover {
+    border: none !important;
+}
+
+.ASCO-Series-Row-LinkAnchor:hover {
+    border: none !important;
+}
+
+
+/*To provide smooth scrolling on responsive devices : Added by Braj*/
+@media screen and (min-width:320px) and (max-width:1366px) {
+    #s4-workspace {
+        overflow-y: scroll; /* has to be scroll, not auto */
+        -webkit-overflow-scrolling: touch;
+    }
+}
+/*To provide smooth scrolling on responsive devices : Added by Braj*/
+@media screen and (min-width:768px) and (max-width:968px) {
+    .asco-section-title {
+        padding-top: 8%;
+    }
+}
+@media screen and (min-width:414px) and (max-width:736px) {
+    ul.s4-breadcrumb {
+        margin-top: 3%;
+    }
+}

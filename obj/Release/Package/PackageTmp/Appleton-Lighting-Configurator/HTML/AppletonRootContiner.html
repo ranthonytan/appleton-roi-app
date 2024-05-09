@@ -1,0 +1,244 @@
+
+<div class="slider-wrapper">
+    <div class="slider-inner">
+        <div class="slide appletonContainerHome">
+            <div class="row">
+                <button type="button" id="nextButton" style="margin:10px;float:right;margin-right:18px;" class="btn btn-primary btnNextHome slide-show">Next</button>
+                <button type="button" id="nextButton" style="margin:10px;float:right;margin-right:50px;display:none" onclick="updateTab()" data-slide="appletonContainerCalculation" class="btn btn-primary btnNextHomeValid slide-show">Next</button>
+            </div>
+            <div id="appletonContainerHome">
+
+            </div>
+            <div class="row">              
+                <button type="button" id="nextButton" style="margin:10px;float:right;margin-right:18px;" class="btn btn-primary btnNextHome slide-show">Next</button>
+                <button type="button" id="nextButton" style="margin:10px;float:right;margin-right:50px;display:none" onclick="updateTab()" data-slide="appletonContainerCalculation" class="btn btn-primary btnNextHomeValid slide-show">Next</button>
+            </div>
+            <div class="row">
+                <!--<p style="padding: 10px 0px 10px 20px;background-color: gainsboro;margin: 20px 10px 0px 45px;"><b>Notice: </b>We use cookies and similar technologies to improve our website, to personalize website content to you, and to deliver advertising messages and offers on content that are relevant to you.  For more specific information on how we use cookies and to change your cookie preferences, see our <a target="_blank" href="http://www.emerson.com/en-us/cookie-notice">Cookie Notice</a>.</p>-->
+                <!--Bannercode Start-->
+                <!--<div class="row cookiebanner" style="display:none;padding: 7pt 0px 1px 20px;background-color: gainsboro;font-size: 1em;line-height: 1.6364em;font-weight: 400;color: gray;margin-bottom: 0;">
+                    <table style="width:100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="col-md-9" style="width: 99%;color: gray;margin-left: 10px;">
+                                        <p>
+                                            <b>Notice: </b>We use cookies and similar technologies to improve our website, to personalize website content to you, and to deliver advertising messages and offers on content that are relevant to you.  For more specific information on how we use cookies and to change your cookie preferences, see our <b><a target="_blank" href="http://www.emerson.com/en-us/cookie-notice" style="color: #00aa7e;">cookie notice</a></b>. understand and don't want to see this message again?  click the x to close this notice.
+                                        </p>
+                                    </div>
+                                </td>
+                                <td style="padding-right: 7pt;padding-bottom: 57px;">
+                                    <div>
+                                        <b>
+                                            <a href="#" class="close" style="opacity: 1; height: 20px; width: 20px; position: relative;">X</a>
+                                        </b>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>-->
+                <!--<script>
+                    //function setCookie(cname, cvalue, exdays) {
+                    //    var d = new Date();
+                    //    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                    //    var expires = "expires=" + d.toGMTString();
+                    //    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+                    //}
+
+                    //function getCookie(cname) {
+                    //    var name = cname + "=";
+                    //    var decodedCookie = decodeURIComponent(document.cookie);
+                    //    var ca = decodedCookie.split(';');
+                    //    for (var i = 0; i < ca.length; i++) {
+                    //        var c = ca[i];
+                    //        while (c.charAt(0) == ' ') {
+                    //            c = c.substring(1);
+                    //        }
+                    //        if (c.indexOf(name) == 0) {
+                    //            return c.substring(name.length, c.length);
+                    //        }
+                    //    }
+                    //    return "";
+                    //}
+
+                   
+
+                    $(document).ready(function () {
+                       // var isValidated = getCookie("isValid");
+                        var isValidated = $.cookie("isValid");
+                        if (isValidated != null && isValidated != "") {
+                            $(".cookiebanner").hide();
+                        }
+                        else {
+                            $(".cookiebanner").show();
+                        }
+                        $(".close").click(function () {
+                            //setCookie("isValid", "done", 7)
+                            $.cookie("isValid", "done");
+                            $(".cookiebanner").hide();
+                        })
+                    });
+                </script>-->
+                <!--Bannercode end-->
+            </div>
+        </div>
+        <div class="slide appletonContainerCalculation">
+            <div class="row">
+                <button type="button" style="margin:10px;float:left;margin-left:16px;" data-slide="appletonContainerHome" class="btn btn-primary btnPrev slide-show">Prev</button>
+                <button type="button" style="margin:10px;float:right;margin-right:1px;" onclick="showReport();" class="btn btn-primary btnNextBody slide-show">Next</button>
+                <button type="button" style="margin:10px;float:right;margin-right:16px;display:none" onclick="updateTab($('#alternate').text());getTotalExistingFixturesData();" data-slide="appletonReport" class="btn btn-primary btnNext slide-show">Next</button>
+            </div>
+            <p>The Appleton<sup>TM</sup> Grp LLC Lighting Retrofit Calculator is presented for informational and guidance purposes only.  The calculations produced are only estimates based on parameters, conditions and assumptions submitted by the User.  The results presented may not reflect the actual performance or energy savings. Please consult your <a target="_blank" href="http://www.emersonindustrial.com/en-US/egselectricalgroup/aboutus/contactus/Pages/aboutus.aspx">Appleton<sup>TM</sup> Representative</a> for more information.</p>
+            <div class="tab">
+                <button type="button" class="tablinks rootbutton" onclick="openCalculator(event, 'existingConfiguration')">Existing Configuration</button>
+                <button type="button" class="tablinks" onclick="openCalculator(event, 'appletonConfiguration')">Appleton Configuration</button>
+                <button type="button" class="tablinks showProposal" style="display:none" id="alternate" onclick="openCalculator(event, 'proposal')">Alternative Proposal</button>
+
+                <input class="inp" style="display:none"></input>
+                <img data-toggle="popover" onclick="showAlternateProposal();" data-content="Add an alternate proposal" style="width:40px;height:20px;float:right;margin-top:10px" class="btnShowProposal" src="/../Appleton-Lighting-Configurator/Image/plus2.png"></img>
+                <img data-toggle="popover" data-content="Remove alternate proposal" onclick="hideAlternateProposal();" style="width:26px;height:26px;float:right;display:none;margin-top:10px" class="btnHideProposal" src="/../Appleton-Lighting-Configurator/Image/Minus2.png"></img>
+                <img onmouseover="colorChange()" style="display:none" onmouseout="colorChange()" class="editimagebuttonNew showProposal" src="/../Appleton-Lighting-Configurator/Image/edit.jpg"></img>
+                <script>
+
+
+
+                    function colorChange() {
+
+
+                        $('.editimagebuttonNew').click(function (e) {
+
+
+                            var store = $(this);
+
+
+                            store.toggleClass('editimagebuttonNew');
+                            if (store.hasClass('editimagebuttonNew')) {
+                                store.attr("src", "/../Appleton-Lighting-Configurator/Image/edit.jpg");
+                                $('.inp').attr("style", "display:none");
+                                var updatedvalue = $('.inp').val();
+                                $('#alternate').text(updatedvalue);
+                                $('#alternate').val(updatedvalue);
+                                $('#alternate').attr("style", "display:inline");
+
+
+
+                            }
+
+
+                            else {
+                                store.attr("src", "/../Appleton-Lighting-Configurator/Image/save.jpg");
+                                $('.inp').attr("style", "display:inline");
+                                $('#alternate').attr("style", "display:none");
+
+                            }
+                            return false;
+                        });
+
+
+
+
+                    }
+
+
+
+                </script>
+
+
+
+
+
+
+
+            </div>
+
+            <div id="existingConfiguration" class="tabcontent">
+                <div id="existingConfigurationContainer">
+
+                </div>
+            </div>
+
+            <div id="appletonConfiguration" class="tabcontent">
+                <div id="appletonConfigurationContainer">
+
+                </div>
+            </div>
+
+            <div id="proposal" class="tabcontent">
+                <div id="proposalContainer">
+
+                </div>
+            </div>
+            <div class="row">
+                
+                <button type="button" style="margin:10px;float:left;margin-left:16px;" data-slide="appletonContainerHome" class="btn btn-primary btnPrev slide-show">Prev</button>
+                <button type="button" style="margin:10px;float:right;margin-right:16px;" onclick="showReport();" class="btn btn-primary btnNextBody slide-show">Next</button>
+                <button type="button" style="margin:10px;float:right;margin-right:16px;display:none" onclick="updateTab($('#alternate').text());getTotalExistingFixturesData();" data-slide="appletonReport" class="btn btn-primary btnNext slide-show">Next</button>
+            </div>
+            <div class="row">
+                <!--<p style="padding: 10px 0px 10px 20px;background-color: gainsboro;margin: 20px 10px 0px 45px;"><b>Notice: </b>We use cookies and similar technologies to improve our website, to personalize website content to you, and to deliver advertising messages and offers on content that are relevant to you.  For more specific information on how we use cookies and to change your cookie preferences, see our <a target="_blank" href="http://www.emerson.com/en-us/cookie-notice">Cookie Notice</a>.</p>-->
+               
+             </div>
+        </div>
+        <div class="slide appletonReport">
+            <div class="row">
+                <button type="button" style="margin:10px;float:left;margin-left:45px;" data-slide="appletonContainerCalculation" class="btn btn-primary btnPrev slide-show">Prev</button>
+            </div>
+            <div id="appletonReport">
+                <h1>Report coming soon</h1>
+            </div>
+            <div class="row">               
+                <button type="button" style="margin:10px;float:left;margin-left:45px;" data-slide="appletonContainerCalculation" class="btn btn-primary btnPrev slide-show">Prev</button>
+            </div>
+            <!--<div class="row">
+               
+                <div class="row cookiebanner" style="display:none;padding: 7pt 0px 1px 20px;background-color: gainsboro;font-size: 1em;line-height: 1.6364em;font-weight: 400;color: gray;margin-bottom: 0;">
+                    <table style="width:100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="col-md-9" style="width: 99%;color: gray;margin-left: 10px;">
+                                        <p>
+                                            <b>Notice: </b>We use cookies and similar technologies to improve our website, to personalize website content to you, and to deliver advertising messages and offers on content that are relevant to you.  For more specific information on how we use cookies and to change your cookie preferences, see our <b><a target="_blank" href="http://www.emerson.com/en-us/cookie-notice" style="color: #00aa7e;">cookie notice</a></b>. understand and don't want to see this message again?  click the x to close this notice.
+                                        </p>
+                                    </div>
+                                </td>
+                                <td style="padding-right: 7pt;padding-bottom: 57px;">
+                                    <div>
+                                        <b>
+                                            <a href="#" class="close" style="opacity: 1; height: 20px; width: 20px; position: relative;">X</a>
+                                        </b>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>-->
+        </div>
+        <p style="text-align: center;">	&#169;2017 Emerson Electric Co.   All rights reserved.</p>
+    </div>
+</div>
+<div>
+
+</div>
+<div class="emailContent"></div>
+<div id="loader"></div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Please enter Wattage and Lamp Life value for LED </h4>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control" id="txtWattage" placeholder="Enter wattage in watts" />
+                <input type="text" style="margin-top:10px" class="form-control" id="txtLife" placeholder="Enter Lamp Life in Hours" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary btnSave">Save changes</button>
+            </div>
+        </div>
+    </div>

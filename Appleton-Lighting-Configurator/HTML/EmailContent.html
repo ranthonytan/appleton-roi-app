@@ -1,0 +1,135 @@
+<div class="container" style="display:none">
+  <div class="row">
+    <div class="col-xs-12">
+
+
+      <div id="content">
+        <h2 class="text-center">Appleton Light Savings Calculator</h2>
+        <p>This is a report for calculating the energy saved by using different light. 
+        </p>
+        <p>
+          <h4 class="text-center">Personal Details</h4>
+          <p>
+          Name : {Name}
+          </p>
+          <p>
+          Email Id : {EmailId}
+          </p>
+          <p>
+          Company Name : {CompanyName}
+          </p>
+          <p>
+          Phone Number: {PhoneNumber}
+          </p>
+        <h4 class="text-center">Project  Details</h4>
+          <p>
+          Project Name : {ProjectName}
+          </p>
+          <p>
+          Application: {Application}
+          </p>
+          <p>
+          Energy Costs per Kwh : {EnergyCost}
+          </p>
+          <p>
+          Time period in Years: {TimePeriod}
+          </p>
+          
+        </p>
+         <h4 class="text-center">Savings</h4>
+        <table id="demo" class="table table-bordered">
+          <tbody>
+		  <tr>
+              <td></td>
+              <td >Existing</td>
+			  <td>Existing %</td>
+               <td >Appleton</td>
+			   <td>Appleton%</td>
+              <td >Proposal</td>
+			  <td> Proposal%</td>
+            </tr>
+            <tr>
+              <td>Initial Net Investment</td>
+              <td>{Existing_IniNetInvest}</td>
+              <td>{Existing_IniNetInvestPercentage}</td>
+               <td>{Appleton_IniNetInvest}</td>
+              <td>{Appleton_IniNetInvestPercentage}</td>
+               <td>{Proposed_IniNetInvest}</td>
+              <td>{Proposed_IniNetInvestPercentage}</td>
+            </tr>
+            <tr>
+              <td>Fixture Maintenance</td>
+              <td>{Existing_FixtureMaintenance}</td>
+              <td>{Existing_FixtureMaintenancePercentage}</td>
+               <td>{Appleton_FixtureMaintenance}</td>
+              <td>{Appleton_FixtureMaintenancePercentage}</td>
+               <td>{Proposed_FixtureMaintenance}</td>
+              <td>{Proposed_FixtureMaintenancePercentage}</td>
+            </tr>
+            <tr>
+              <td>Energy Consumed</td>
+              <td>{Existing_EnergyConsumed}</td>
+              <td>{Existing_EnergyConsumedPercentage}</td>
+               <td>{Appleton_EnergyConsumed}</td>
+              <td>{Appleton_EnergyConsumedPercentage}</td>
+               <td>{Proposed_EnergyConsumed}</td>
+              <td>{Proposed_EnergyConsumedPercentage}</td>
+            </tr>
+             <tr>
+              <td>Other</td>
+               <td>{Existing_Other}</td>
+              <td>{Existing_OtherPercentage}</td>
+               <td>{Appleton_Other}</td>
+              <td>{Appleton_OtherPercentage}</td>
+               <td>{Proposed_Other}</td>
+              <td>{Proposed_OtherPercentage}</td>
+            </tr>
+             <tr>
+              <td>{YearVal} Year Total Costs</td>
+               <td >{Existing_TotalCost}</td>
+			   <td></td>
+               <td >{Appleton_TotalCost}</td>
+			   <td></td>
+               <td> {Proposed_TotalCost}</td>
+			   <td></td>
+            </tr>
+          </tbody>
+        </table>
+        
+         <h4 class="text-center">Energy Savings</h4>
+        <table id="demo" class="table table-bordered">
+          <tbody>
+		  <tr>
+              <td></td>
+              <td>Appleton</td>
+              <td>Proposed</td>
+            </tr>
+            <tr>
+              <td>Savings over Existing (Excluding Initial Investment)</td>
+              <td>{Appleton_SavingsoverExisting}</td>
+              <td>{Proposed_SavingsoverExisting}</td>
+            </tr>
+            <tr>
+              <td>Average Yearly Savings</td>
+                <td>{Appleton_AvgYearlySavings}</td>
+              <td>{Proposed_AvgYearlySavings}</td>
+            </tr>
+            <tr>
+              <td>Payback Period (years)</td>
+               <td>{Appleton_PaybackPeriods}</td>
+              <td>{Proposed_PaybackPeriods}</td>
+            </tr>
+            
+          </tbody>
+        </table>
+        
+        <div>
+          <button class="btn" id="export">Save</button>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<br>

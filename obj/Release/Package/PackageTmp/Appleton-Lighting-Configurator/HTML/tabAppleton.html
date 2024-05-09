@@ -1,0 +1,557 @@
+<div class="container">
+    <div class="row" style="width: 99%;">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <div class="panel panel-default" style="margin-left:-15px">
+                    <div class="panel-heading">Appleton Proposal Data Over Period</div>
+                    <div class="panel-body">
+                        <table class="table table-condensed;">
+                            <tbody>
+                                <tr>
+                                    <td style="text-align:right;">
+                                        <label>Energy Costs per kWh <span class="currency"></span></label>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control maxwidth350 energycost" readonly onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()">
+                                    </td>
+                                    <td>
+                                        <a data-content="Input in Project Information." data-toggle="popover">
+    <img src="/../Appleton-Lighting-Configurator/Image/question.jpg">
+    </a></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right">
+                                        <label>Time Period in Years</label>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control maxwidth350 timeperiod" readonly onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()">
+                                    </td>
+                                    <td>
+                                        <lebal><a data-content="Input in Project Information." data-toggle="popover">
+    <img src="/../Appleton-Lighting-Configurator/Image/question.jpg">
+    </a></lebal>
+                                    </td>
+                                    <td>
+                                        <lebal></lebal>
+                                    </td>
+                                    <td>
+                                        <lebal></lebal>
+                                    </td>
+                                    <td>
+                                        <lebal></lebal>
+                                    </td>
+                                    <td>
+                                        <lebal></lebal>
+                                    </td>
+                                    <td>
+                                        <lebal></lebal>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-condensed;">
+                            <tbody>
+                                <tr>
+                                </tr>
+                                <button type="button" class="btn btn-primary btnNext1">Fixture Type 1</button>
+                                <button type="button" class="btn btn-primary btnNext2">Fixture Type 2</button>
+                                <button type="button" class="btn btn-primary btnNext3">Fixture Type 3</button>
+                                <button type="button" class="btn btn-primary btnNext4">Fixture Type 4</button>
+                                
+								 <tr>
+                                    <td style="text-align:right">
+                                        <label>Area Classification</label>
+                                    </td>
+                                    <td>
+                                        <select class="form-control maxwidth350 areaClass" onchange="BindAppletonLED();">
+										 <option value="Hazardous" >Hazardous</option>
+										 <option value="NonHazardous">Industrial (Non-Hazardous)</option>
+									  </select>
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                </tr>
+								
+								<tr>
+                                    <td style="text-align:right">
+                                        <label>Appleton LED Series</label>
+                                    </td>
+                                    <td>
+                                        <label id="ddlLedSeries"></label>
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right">
+                                        <label>Series Part Number</label>
+                                    </td>
+                                    <td>
+                                        <select class="form-control maxwidth350 seriespn">
+                                 <option >AMLGL6</option>
+                                 <option >AMLGL7</option>
+                                 <option >AMLGL8</option>
+                              </select>
+                                    </td>
+                                    <td style="text-align:left">
+                              <label>
+                                 <a data-toggle="popover" data-content="Select according to Series Part Number or HID Equivalent.">
+                                    <image src="/../Appleton-Lighting-Configurator/Image/question.jpg"></image>
+                                 </a>
+                              </label>
+                           </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right">
+                                        <label>HID Equivalent</label>
+                                    </td>
+                                    <td>
+                                        <select class="form-control maxwidth350 hidEquivalent">
+                              </select>
+                                    </td>
+                                    <td><label><a data-toggle="popover" data-content="Select according to Series Part Number or HID Equivalent.">
+                                    <image src="/../Appleton-Lighting-Configurator/Image/question.jpg"></image>
+                                 </a></label></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right">
+                                        <label>System Wattage</label>
+                                    </td>
+                                    <td>
+                                        <input type="number" readonly class="form-control maxwidth350 appSystemWatt" onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()" />
+                                    </td>
+                                    <td style="text-align:left">
+                                        <label>Watts</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right">
+                                        <label>Nominal Lumens</label>
+                                    </td>
+                                    <td>
+                                        <input readonly type="number" class="form-control maxwidth350 nominalLuments" />
+                                    </td>
+                                    <td style="text-align:left">
+                                        <label></label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="text-align:right">
+                                        <label>Quantity<span style="color:red">*</span></label>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control maxwidth350 quantity required" onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()" />
+                                        <span class="warningInfo" style="display: none;"><img src="/../Appleton-Lighting-Configurator/Image/warning2.png"> <span style="color:red">This field is required </span></span>
+                                    </td>
+                                    <td>
+                                        <lebal><a data-content="Enter the total number of fixtures of this specific type and wattage that will be used in the lighting design." data-toggle="popover">
+    <img src="/../Appleton-Lighting-Configurator/Image/question.jpg">
+    </a></lebal>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right">
+                                        <label>Fixture Cost <span class="currency"></span><span style="color:red">*</span></label>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control maxwidth350 fixedcost required" onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()" />
+                                        <span class="warningInfo" style="display: none;"><img src="/../Appleton-Lighting-Configurator/Image/warning2.png"> <span style="color:red">This field is required </span></span>
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <label>Per Fixture 
+<a data-content="Enter the cost you paid or expect to pay for one fixture. Include any additional costs such as mounting accessories." data-toggle="popover">
+    <img src="/../Appleton-Lighting-Configurator/Image/question.jpg">
+    </a></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right">
+                                        <label>Installation Costs <span class="currency"></span><span style="color:red">*</span></label>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control maxwidth350 instcost required" onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()" />
+                                        <span class="warningInfo" style="display: none;"><img src="/../Appleton-Lighting-Configurator/Image/warning2.png"> <span style="color:red">This field is required </span></span>
+                                    </td>
+                                    <td style="text-align:left">
+                                        <label>Per Fixture<a data-content="Enter labor and any additional installation cost." data-toggle="popover">
+    <img src="/../Appleton-Lighting-Configurator/Image/question.jpg">
+    </a></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right">
+                                        <label>Run Time for one fixture<span style="color:red">*</span></label>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control maxwidth350 runtime required" onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()" />
+                                        <span class="warningInfo" style="display: none;"><img src="/../Appleton-Lighting-Configurator/Image/warning2.png"> <span style="color:red">This field is required </span></span>
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <label>Per Fixture 
+<a data-content="Enter the average number of hours per day your system will be powered on. Most facilities are lighted either 12 or 24 hours per day." data-toggle="popover">
+    <img src="/../Appleton-Lighting-Configurator/Image/question.jpg">
+    </a></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right">
+                                        <label>Luminaire Life</label>
+                                    </td>
+                                    <td>
+									<!--<input type="number" class="form-control maxwidth350 life required" onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()" />-->
+										 <select class="form-control maxwidth350 life" onchange="changeAppletonLampLife()" >
+										 <option value="200000">200,000</option>
+										 <option value="120000">120,000</option>
+										 <option value="100000">100,000</option>
+										 <option value="90000">90,000</option>
+										 <option value="60000">60,000</option>
+										 <option value="0">Others</option>
+									  </select>
+									  <input type="number" style="display:none;margin-top:5px" class="form-control maxwidth350 lifeValApp" onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()" />
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <label>Hours (Based on Ambient Temp.) <a data-content="<div><b><u>Ambient Temperature Luminaire Life(Hours)</u></b></div><div><table><tr><td>+25 <sup>o</sup>C(+77 <sup>o</sup>F)</td><td style='padding-left:50px'>200,000</td></tr><tr><td>+40 <sup>o</sup>C(+104 F)</td><td style='padding-left:50px'>100,000</td></tr><tr><td>+55 <sup>o</sup>C(+131 <sup>o</sup>F)</td><td style='padding-left:50px'>90,000</td></tr><tr><td>+65 <sup>o</sup>C(+149 <sup>o</sup>F)</td><td style='padding-left:50px'>60,000</td></tr></table></div>" data-toggle="popover">
+    <img src="/../Appleton-Lighting-Configurator/Image/question.jpg">
+    </a></label>
+                                    </td>
+                                </tr>
+                                <tr style="display:none">
+                                    <td style="text-align:right">
+                                        <label>Labor Rate <span class="currency"></span><span style="color:red">*</span></label>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control maxwidth350 laborrate" onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()" />
+                                        <span class="warningInfo" style="display: none;"><img src="/../Appleton-Lighting-Configurator/Image/warning2.png"> <span style="color:red">This field is required </span></span>
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <label>Per Hour <a data-content="Enter the full labor rate for a team of electricians to replace one fixture. For example, if it takes two people to replace a fixture, with one earning $50/hour and the other earning $100/hour, enter 150 ($150/hour)." data-toggle="popover">
+    <img src="/../Appleton-Lighting-Configurator/Image/question.jpg">
+    </a></label>
+                                    </td>
+                                </tr>
+                                <tr style="display:none">
+                                    <td style="text-align:right">
+                                        <label>Time to change Array<span style="color:red">*</span></label>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control maxwidth350 relamp " onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()" />
+                                        <span class="warningInfo" style="display: none;"><img src="/../Appleton-Lighting-Configurator/Image/warning2.png"> <span style="color:red">This field is required </span></span>
+                                    </td>
+                                    <td style="text-align:left">
+                                        <label>Hour</label>
+                                    </td>
+                                </tr>
+                                <tr style="display:none">
+                                    <td style="text-align:right">
+                                        <label>Array Cost <span class="currency"></span><span style="color:red">*</span></label>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control maxwidth350 lampcost " onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()" />
+                                        <span class="warningInfo" style="display: none;"><img src="/../Appleton-Lighting-Configurator/Image/warning2.png"> <span style="color:red">This field is required </span></span>
+                                    </td>
+                                    <td style="text-align:left">
+                                        <label>Per Fixture</label>
+                                    </td>
+                                </tr>
+                                <tr style="display:none">
+                                    <td style="text-align:right">
+                                        <label>Array Disposal Cost <span class="currency"></span><span style="color:red">*</span></label>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control maxwidth350 lampdisposal " onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()" />
+                                        <span class="warningInfo" style="display: none;"><img src="/../Appleton-Lighting-Configurator/Image/warning2.png"> <span style="color:red">This field is required </span></span>
+                                    </td>
+                                    <td style="text-align:left">
+                                        <label>Per Fixture</label>
+                                    </td>
+                                </tr>
+                                <tr style="display:none">
+                                    <td style="text-align:right">
+                                        <label>Driver Cost <span class="currency"></span><span style="color:red">*</span></label>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control maxwidth350 ballcost " onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()" />
+                                        <span class="warningInfo" style="display: none;"><img src="/../Appleton-Lighting-Configurator/Image/warning2.png"> <span style="color:red">This field is required </span></span>
+                                    </td>
+                                    <td style="text-align:left">
+                                        <label>Per Fixture<a data-content="Enter the cost of one driver." data-toggle="popover">
+    <img src="/../Appleton-Lighting-Configurator/Image/question.jpg">
+    </a></label>
+                                    </td>
+                                </tr>
+                                <tr style="display:none">
+                                    <td style="text-align:right">
+                                        <label>Driver Disposal Cost <span class="currency"></span><span style="color:red">*</span></label>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control maxwidth350 balldisposal" onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()" />
+                                        <span class="warningInfo" style="display: none;"><img src="/../Appleton-Lighting-Configurator/Image/warning2.png"> <span style="color:red">This field is required </span></span>
+                                    </td>
+                                    <td style="text-align:left">
+                                        <label>Per Fixture</label>
+                                    </td>
+                                </tr>
+                                <tr style="display:none">
+                                    <td style="text-align:right">
+                                        <label>Time to Replace Driver<span style="color:red">*</span></label>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control maxwidth350 replaceball" onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()" />
+                                        <span class="warningInfo" style="display: none;"><img src="/../Appleton-Lighting-Configurator/Image/warning2.png"> <span style="color:red">This field is required </span></span>
+                                    </td>
+                                    <td style="text-align:left">
+                                        <label>Hours<a data-content="Enter the average time it takes (in clock hours) for the team working together to change a driver. For example, if each member of a two-person team works four hours to change a driver, enter 4. Remember to include the time to erect scaffolding, replace the driver, take down equipment, etc." data-toggle="popover">
+    <img src="/../Appleton-Lighting-Configurator/Image/question.jpg">
+    </a></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right">
+                                        <label>Driver Changes<span style="color:red">*</span></label>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control maxwidth350 ballchange required" onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()" />
+                                        <span class="warningInfo" style="display: none;"><img src="/../Appleton-Lighting-Configurator/Image/warning2.png"> <span style="color:red">This field is required </span></span>
+                                    </td>
+                                    <td style="text-align:left">
+                                        <label>Over <span class="yeartotalcostspan"></span> Years<a data-content="Enter the number of driver replacements per fixture that would occur on average during the selected time period. For example, if the Time Period in Years is 20 and you expect to replace the driver every ten years, you would enter 1 (not 2, since you are projecting that the entire fixture will be replaced at the end of 20 years). Ten years is a typical driver replacement interval for most LED lighting." data-toggle="popover">
+    <img src="/../Appleton-Lighting-Configurator/Image/question.jpg">
+    </a></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right">
+                                        <label>Misc. Maintenance Costs <span class="currency"></span></label>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control maxwidth350 maintenance" onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()" />
+                                        <span class="warningInfo" style="display: none;"><img src="/../Appleton-Lighting-Configurator/Image/warning2.png"> <span style="color:red">This field is required </span></span>
+                                    </td>
+                                    <td style="text-align:left">
+                                        <label>Per Fixture<a data-content="Enter the total amount of any additional costs, calculated on a per-fixture basis. Examples include moving conduit, erecting scaffolding, renting lift trucks, etc." data-toggle="popover">
+    <img src="/../Appleton-Lighting-Configurator/Image/question.jpg">
+    </a></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right">
+                                        <label>Incentive/Rebate <span class="currency"></span></label>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control maxwidth350 incentive" onchange="calculateExistingSummary()" onkeyup="calculateExistingSummary()" />
+                                        <span class="warningInfo" style="display: none;"><img src="/../Appleton-Lighting-Configurator/Image/warning2.png"> <span style="color:red">This field is required </span></span>
+                                    </td>
+                                    <td style="text-align:left">
+                                        <label>Total Refund (Lump Sum)<a data-content="Must be entered as a positive number. Enter any incentive offers or rebates you anticipate receiving for the investment as a lump sum. For example, if the incentive is based on the amount of energy saved, enter the projected lump sum amount that will be received. This amount will be deducted from the cost of the initial investment which is calculated as the fixture cost multiplied by the quantity." data-toggle="popover">
+    <img src="/../Appleton-Lighting-Configurator/Image/question.jpg">
+    </a> </label>
+                                    </td>
+                                </tr>
+								<tr>
+								<td></td>
+								<td></td>
+								<td><button type="button" onclick="resetFixture();" class="btn btn-primary Reset">Reset Fixture</button></td>
+								</tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div style="margin-right:-15px" class="panel panel-default">
+                    <div class="panel-heading">Appleton Configuration Summary</div>
+                    <div class="panel-body">
+                        <table class="table table-condensed;">
+                            <tbody>
+                                <tr>
+                                    <td style="text-align:right;">
+                                        <label>Fixture Cost + Installation Cost <span class="currency"></span></label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control maxwidth350 fixinst" readonly />
+                                    </td>
+                                    <td>
+                                        <lebal><a data-toggle="popover" data-content="(Fixture Cost + Installation Cost) X Quantity ">
+                                    <image src="/../Appleton-Lighting-Configurator/Image/question.jpg"></image>
+                                 </a></lebal>
+                                    </td>
+
+                                </tr>
+                                <tr style="display:none">
+                                    <td style="text-align:right">
+                                        <label>Cost to Replace Array <span class="currency"></span></label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control maxwidth350 costtorelamp" readonly />
+                                    </td>
+                                    <td style="text-align:left">
+                                        <label>Per Fixture</label>
+                                    </td>
+                                </tr>
+                                <tr style="display:none">
+                                    <td style="text-align:right">
+                                        <label>Array gets changed every</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control maxwidth350 howoftenrelamp" maxlength="100" readonly />
+                                    </td>
+                                    <td style="text-align:left">
+                                        <label>Years</label>
+                                    </td>
+                                </tr>
+                                <tr style="display:none">
+                                    <td style="text-align:right">
+                                        <label>Total Array Replacement Cost <span class="currency"></span></label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control maxwidth350 totalrelamp" maxlength="100" readonly />
+                                    </td>
+                                    <td>
+                                        <lebal></lebal>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right">
+                                        <label>Driver Replacement Cost <span class="currency"></span></label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control maxwidth350 driverReplacementCost" readonly />
+                                    </td>
+                                    <td>
+                                        <lebal><a data-toggle="popover" data-content="Quantity X Driver Changes X 100 (Assuming $100/driver)">
+                                    <image src="/../Appleton-Lighting-Configurator/Image/question.jpg"></image>
+                                 </a></lebal>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right">
+                                        <label>Energy Used per Year</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control maxwidth350 energyused" readonly />
+                                    </td>
+                                    <td style="text-align:left">
+                                        <label>kWh/year<a data-toggle="popover" data-content="System Wattage X Quantity X Run Time for One Fixture X 365 days / 1000">
+                                    <image src="/../Appleton-Lighting-Configurator/Image/question.jpg"></image>
+                                 </a></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right">
+                                        <label>Energy Cost <span class="currency"></span></label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control maxwidth350 totalenergycost" readonly />
+                                    </td>
+                                    <td>
+                                        <lebal><a data-toggle="popover" data-content="Energy Used per Year X Energy Cost per kWh X Time Period in Years">
+                                    <image src="/../Appleton-Lighting-Configurator/Image/question.jpg"></image>
+                                 </a></lebal>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right">
+                                        <label>Total Cost <span class="currency"></span></label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control maxwidth350 totalcost" readonly />
+                                    </td>
+                                    <td>
+                                        <lebal><a data-toggle="popover" data-content="Fixture Cost + Installation Cost + Driver Replacement Cost + Energy Cost + (Misc. Maintenance Cost X Quantity)  - Incentive/Rebate">
+                                    <image src="/../Appleton-Lighting-Configurator/Image/question.jpg"></image>
+                                 </a></lebal>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div style="margin-right:-15px" class="panel panel-default">
+				<div class="panel-heading">Total for All Appleton Fixture Types</div>
+                    <div class="panel-body">
+                        <table class="table table-condensed;">
+                            <tbody>
+                                <tr>
+                                    <td style="text-align:right;">
+                                        <label>Initial Net Investment <span class="currency"></span></label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control maxwidth350 intnetinv1" readonly />
+										<input type="hidden" id="totalEnergyUserAppleton">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control maxwidth350 intnetinv2" readonly />
+                                    </td>
+                                    <td><lebel><a data-toggle="popover" data-content="Sum of Fixture Cost + Installation Cost - Incentive/Rebate">
+                                    <image src="/../Appleton-Lighting-Configurator/Image/question.jpg"></image>
+                                 </a></lebel></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right;">
+                                        <label>Maintenance Costs <span class="currency"></span></label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control maxwidth350 fixmain1" readonly />
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control maxwidth350 fixmain2" readonly />
+                                    </td>
+                                    <td><lebel><a data-toggle="popover" data-content="Sum of Driver Replacement Cost and and Misc. Maintenance Cost">
+                                    <image src="/../Appleton-Lighting-Configurator/Image/question.jpg"></image>
+                                 </a></lebel></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right;">
+                                        <label>Energy Costs<span class="currency"></span></label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control maxwidth350 engcon1" readonly />
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control maxwidth350 engcon2" readonly />
+                                    </td>
+                                    <td><lebel><a data-toggle="popover" data-content="Sum of Energy Cost">
+                                    <image src="/../Appleton-Lighting-Configurator/Image/question.jpg"></image>
+                                 </a></lebel></td>
+                                </tr>
+                               <!-- <tr>
+                                    <td style="text-align:right;">
+                                        <label>Other <span class="currency"></span></label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control maxwidth350 other1" readonly />
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control maxwidth350 other2" readonly />
+                                    </td>
+                                </tr>-->
+                                <tr>
+                                    <td style="text-align:right;">
+                                        <label><span class="yeartotalcostspan"></span> Year Total <br/> Costs <span class="currency"></span></label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control maxwidth350 yeattotalcost" readonly />
+                                    </td>
+                                    <td>
+                                        <lebal><a data-toggle="popover" data-content="Sum of Initial Net Investment + Maintenance Costs + Energy Costs">
+                                    <image src="/../Appleton-Lighting-Configurator/Image/question.jpg"></image>
+                                 </a></lebal>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <label style="float:right">(<span style="color:red">*</span>) <span style="color:red">Required field</span></label> 
+            </div>
+        </div>
+    </div>
+</div>

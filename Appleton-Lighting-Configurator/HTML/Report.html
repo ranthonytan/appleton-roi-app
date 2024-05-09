@@ -1,0 +1,326 @@
+<div class="container" id="printMe">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <p>The Appleton<sup>TM</sup> Grp LLC Lighting Retrofit Calculator is presented for informational and guidance purposes only.  The calculations produced are only estimates based on parameters, conditions and assumptions submitted by the User.  The results presented may not reflect the actual performance or energy savings. Please consult your <a target="_blank" href="http://www.emersonindustrial.com/en-US/egselectricalgroup/aboutus/contactus/Pages/aboutus.aspx">Appleton<sup>TM</sup> Representative</a> for more information.</p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Savings</div>
+                    <div class="panel-body" width="300">
+                        <table class="table table-condensed;">
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td>Existing Lighting System</td>
+                                    <td>Percentage of Total Cost</td>
+                                    <td>Appleton LED Proposal</td>
+                                    <td>Percentage of Total Cost</td>
+                                    <td class="showProposal" style="display:none"><div id=tabUpdate>Alternate Proposal</div></td>
+                                    <td class="showProposal" style="display:none">Percentage of Total Cost</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right;">
+                                        <label>Initial Net Investment</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly class="form-control maxwidth350 existingNetInvestment" />
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly class="form-control maxwidth350 existingNetInvestmentPercentage" />
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly class="form-control maxwidth350 appletonNetInvestment" />
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly class="form-control maxwidth350 appletonNetInvestmentPercentage" />
+                                    </td>
+
+                                    <td class="showProposal" style="display:none">
+                                        <input type="text" readonly class="form-control maxwidth350 proposalNetInvestment" />
+                                    </td>
+                                    <td class="showProposal" style="display:none">
+                                        <input type="text" readonly class="form-control maxwidth350 proposalNetInvestmentPercentage" />
+                                    </td>
+                                    <td>
+                                        <lebal>
+                                            <a data-toggle="popover" data-content="Includes Incentive/Rebate ">
+                                                <image src="/Image/question.jpg"></image>
+                                            </a>
+                                        </lebal>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right;">
+                                        <label>Maintenance Costs</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly class="form-control maxwidth350 existingFixtureMaintenance" />
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly class="form-control maxwidth350 existingFixtureMaintenancePercentage" />
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly class="form-control maxwidth350 appletonFixtureMaintenance" />
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly class="form-control maxwidth350 appletonFixtureMaintenancePercentage" />
+                                    </td>
+                                    <td class="showProposal" style="display:none">
+                                        <input type="text" readonly class="form-control maxwidth350 proposalFixtureMaintenance" />
+                                    </td>
+                                    <td class="showProposal" style="display:none">
+                                        <input type="text" readonly class="form-control maxwidth350 proposalFixtureMaintenancePercentage" />
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:right;">
+                                        <label>Energy Costs</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly class="form-control maxwidth350 existingEnergyConsumed" />
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly class="form-control maxwidth350 existingEnergyConsumedPercentage" />
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly class="form-control maxwidth350 appletonEnergyConsumed" />
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly class="form-control maxwidth350 appletonEnergyConsumedPercentage" />
+                                    </td>
+                                    <td class="showProposal" style="display:none">
+                                        <input type="text" readonly class="form-control maxwidth350 proposalEnergyConsumed" />
+                                    </td>
+                                    <td class="showProposal" style="display:none">
+                                        <input type="text" readonly class="form-control maxwidth350 proposalEnergyConsumedPercentage" />
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <!--<tr>
+                                   <td style="text-align:right;">
+                                      <label>Other</label>
+                                   </td>
+                                   <td>
+                                      <input type="text" readonly class="form-control maxwidth350 existingOtherCost" />
+                                   </td>
+                                   <td>
+                                      <input type="text" readonly class="form-control maxwidth350 existingOtherCostPercentage" />
+                                   </td>
+                                   <td>
+                                      <input type="text" readonly class="form-control maxwidth350 appletonOtherCost" />
+                                   </td>
+                                   <td>
+                                      <input type="text" readonly class="form-control maxwidth350 appletonOtherCostPercentage" />
+                                   </td>
+                                   <td>
+                                      <input type="text" readonly class="form-control maxwidth350 proposalOtherCost" />
+                                   </td>
+                                   <td>
+                                      <input type="text" readonly class="form-control maxwidth350 proposalOtherCostPercentage" />
+                                   </td>
+                                </tr>-->
+                                <tr>
+                                    <td style="text-align:right;">
+                                        <label><span class="yeartotalcostspan"></span> Year Total Costs </label>
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly class="form-control maxwidth350 existingTotalFixyureSummaryCost" />
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <input type="text" readonly class="form-control maxwidth350 appletonTotalFixyureSummaryCost" />
+                                    </td>
+                                    <td class="showProposal" style="display:none"></td>
+                                    <td class="showProposal" style="display:none">
+                                        <input type="text" readonly class="form-control maxwidth350 proposalTotalFixyureSummaryCost" />
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-condensed resultTable">
+                            <tbody>
+                                <tr>
+                                    <td width="410" style="text-align:right;">Total Savings</td>
+                                    <td><input type="text" readonly class="form-control maxwidth350 savingOverExisting"></td>
+                                    <td width="303" class="showProposal" style="display:none"><input type="text" readonly class="form-control maxwidth350 savingOverExisting2"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td width="400" style="text-align:right;">
+                                        Initial Net Investment
+                                    </td>
+                                    <td><input type="text" readonly class="form-control maxwidth350 initNetInvest"></td>
+                                    <td class="showProposal" style="display:none"><input type="text" readonly class="form-control maxwidth350 initNetInvest2"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td width="400" style="text-align:right;">
+                                        Return on Investment (ROI)
+                                    </td>
+                                    <td><input type="text" readonly class="form-control maxwidth350 ROI"></td>
+                                    <td class="showProposal" style="display:none"><input type="text" readonly class="form-control maxwidth350 ROI2"></td>
+                                    <td>
+                                        <lebal>
+                                            <a data-toggle="popover" data-content="Total Savings / Initial Net Investment">
+                                                <image src="/Image/icon1.jpg"></image>
+                                            </a>
+                                        </lebal>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="400" style="text-align:right;">
+                                        Average Yearly Savings
+                                    </td>
+                                    <td><input type="text" readonly class="form-control maxwidth350 avgYearlySaving"></td>
+                                    <td class="showProposal" style="display:none"><input type="text" readonly class="form-control maxwidth350 avgYearlySaving2"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td width="400" style="text-align:right;">
+                                        Payback Period (Years)
+                                    </td>
+                                    <td><input type="text" readonly class="form-control maxwidth350 paybackPeriod"></td>
+                                    <td class="showProposal" style="display:none"><input type="text" readonly class="form-control maxwidth350 paybackPeriod2"></td>
+                                    <td>
+                                        <lebal>
+                                            <a data-toggle="popover" data-content="Initial Net Investment / Average Yearly Savings">
+                                                <image src="/Image/icon1.jpg"></image>
+                                            </a>
+                                        </lebal>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <table>
+                            <tr>
+                                <td>
+                                    <div id="costBreakoutPercentage"></div>
+                                </td>
+                                <td>
+                                    <div id="costBreakoutTotal"></div>
+                                </td>
+                                <td>
+                                    <label style="margin-bottom:10px">
+                                        <input class="chkbxAllow2" type="checkbox" value="">
+                                        <span style="padding: 10px;font-size: 13px;">
+                                            I wish to receive communications via email from Emerson.
+                                        </span>
+                                    </label>
+                                    <button type="button" style="width: 220px;margin-left: -10px;" class="btn btn-primary btnEmail">Email</button>
+                                    <button type="button" style="margin: 10px 10px 10px 0px;width: 210px;" class="btn btn-primary btnPrint" onclick="myFunction()">Download PDF</button>
+
+                                    <script>
+                                        function myFunction() {
+                                            //$("#appletonReport").printThis();
+                                            var dialog = bootbox.dialog({
+                                                message: '<p class="text-center">Please wait while we download the report...</p>',
+                                                closeButton: false
+                                            });
+                                            setTimeout(function () {
+                                                downloadReportAsPDF();
+                                                dialog.modal('hide');
+                                            }, 1000);
+                                        }
+
+
+                                    </script>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <!--<a data-toggle="popover" data-content="Calculated by Upgrading to Appleton LED Lighting ">
+                    <image src="/Image/icon3.jpg"></image>
+                </a>-->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <span>Environmental Impact (per year)</span>
+                        <a data-toggle="popover" data-content="* Calculated by comparing reduction in kWh by switching to Appleton LED solution. Based on U.S. Environmental Protection Agency (EPA) Greenhouse Gas Equivalencies Calculator.">
+                            <image src="/Image/icon2.jpg"></image>
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                <table class="table table-condensed resultTable">
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="/Image/EnvironmentImpact/Power.jpg" /></td>
+                                            <td><label class="envValContainer">Reduction of kWh: <span class="evsValue"><span id="redEnergy"></span> kWh</span></label></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><img src="/Image/EnvironmentImpact/Co2.jpg" /></td>
+                                            <td><label class="envValContainer">Reduction of Carbon Dioxide Emissions: <span class="evsValue"><span id="carbon"></span> Metric Tons<br><span id="carbon1"></span> Pounds</span></label></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><img src="/Image/EnvironmentImpact/Power.jpg" /></td>
+                                            <td><label class="envValContainer">Electricity Saved <br>(Average Household Usage for 1 Year): <span class="evsValue"><span id="power"></span></span></label></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="col-md-6">
+                                <table class="table table-condensed resultTable">
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="/Image/EnvironmentImpact/Trees.jpg" /></td>
+                                            <td><label class="envValContainer">Acres of Trees Planted:  <span class="evsValue"><span id="tree"></span></span></label></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="/Image/EnvironmentImpact/coal.jpg" /></td>
+                                            <td><label class="envValContainer">Reduction of Coal Emissions: <span class="evsValue"><span id="coal"></span> Metric Tons<br><span id="coal1"></span> Pounds</span></label></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><img src="/Image/EnvironmentImpact/car.jpg" /></td>
+                                            <td><label class="envValContainer"> Fewer Miles Driven <br>(By Average Passenger Vehicle):  <span class="evsValue"><span id="car"></span></span></label></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+       
+        
+        </div>
+    </div>
+</div>
+
+<script>
+
+                                        function updateTab(buttonText) {
+
+                                            var update = buttonText;
+
+                                            document.getElementById('tabUpdate').innerHTML = update;
+
+                                        }
+</script>

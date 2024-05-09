@@ -1,0 +1,125 @@
+{
+  "Lamp": [
+    {
+      "Name": "High Pressure Sodium",
+      "Wattage": [
+        35,
+        50,
+        70,
+        100,
+        150,
+        200,
+        250,
+        400,
+        600,
+        1000,
+        "Others"
+      ],
+      "life": 24000,
+	   "Description":"<div><b>Lamp Type</b><br/>High Pressure Sodium</div><br/><div><b>Wattage</b><br/>Enter the luminaire's rated wattage. Typical lamp wattages include: 35, 50, 70, 100, 150, 200, 250, 400, 600, 1000.  </div><br/><div><b>Life</b><br/>Enter the expected life in hours. 24,000 hours is a typical lamp life value. </div>",
+      "BCF": 1.2
+    },
+    {
+      "Name": "Incandescent",
+      "Wattage": [
+        60,
+        75,
+        100,
+        150,
+        200,
+        300,
+        "Others"
+      ],
+      "life": 1000,
+	   "Description":"<div><b>Lamp Type</b><br/>Incandescent</div><br/><div><b>Wattage</b><br/>Enter the luminaire's rated wattage. Typical lamp wattages include: 60, 75, 100, 150, 200, 300.  </div><br/><div><b>Life</b><br/>Enter the expected life in hours. 750 to 1,000 hours is a typical lamp life value.  </div>",
+      "BCF": 1
+    },
+    {
+      "Name": "Induction",
+      "Wattage": [
+        55,
+        85,
+        165,
+        "Others"
+      ],
+      "life": 100000,
+	   "Description":"<div><b>Lamp Type</b><br/>Induction</div><br/><div><b>Wattage</b><br/>Enter the luminaire's rated wattage. Typical lamp wattages include: 55, 85, 165.  </div><br/><div><b>Life</b><br/>Enter the expected life in hours. 100,000 hours is a typical lamp life value.  </div>",
+      "BCF": 1
+    },
+    {
+      "Name": "LED",
+      "Wattage": [
+        "Others"
+      ],
+      "life": null,
+	   "Description":"<div><b>Lamp Type</b><br/>LED</div><br/><div><b>Wattage</b><br/>Wattage varies. Consult lamp or luminaire nameplate.   </div><br/><div><b>Life</b><br/>Life varies. Consult lamp or luminaire nameplate.  </div>",
+      "BCF": 1
+    },
+    {
+      "Name": "Mercury Vapor",
+      "Wattage": [
+        100,
+        175,
+        250,
+        400,
+        1000,
+        "Others"
+      ],
+      "life": 24000,
+	   "Description":"<div><b>Lamp Type</b><br/>Mercury Vapor</div><br/><div><b>Wattage</b><br/>Enter the luminaire's rated wattage. Typical lamp wattages include: 100, 175, 250, 400, 1000.  </div><br/><div><b>Life</b><br/>Enter the expected life in hours. 24,000 hours is a typical lamp life value. </div>",
+      "BCF": 1.2
+    },
+    {
+      "Name": "Metal Halide",
+      "Wattage": [
+        70,
+        100,
+        150,
+        250,
+        400,
+        600,
+        1000,
+        1500,
+        "Others"
+      ],
+      "life": 10000,
+	   "Description":"<div><b>Lamp Type</b><br/>Metal Halide</div><br/><div><b>Wattage</b><br/>Enter the luminaire's rated wattage. Typical lamp wattages include: 70, 100, 175, 250, 400, 1000, 1500.  </div><br/><div><b>Life</b><br/>Enter the expected life in hours. 10,000 hours is a typical lamp life value.  </div>",
+      "BCF": 1.2
+    },
+    {
+      "Name": "Pulse Start Metal Halide",
+      "Wattage": [
+        70,
+        100,
+        175,
+        200,
+        250,
+        320,
+        350,
+        400,
+        750,
+        1000,
+        "Others"
+      ],
+      "life": 20000,
+	   "Description":"<div><b>Lamp Type</b><br/>Pulse Start Metal Halide</div><br/><div><b>Wattage</b><br/>Enter the luminaire's rated wattage. Typical lamp wattages include: 70, 100, 175, 200, 250, 320, 350, 400, 750, 1000.  </div><br/><div><b>Life</b><br/>Enter the expected life in hours. 20,000 hours is a typical lamp life value. </div>",
+      "BCF": 1.2
+    },
+    {
+      "Name": "Fluorescent",
+      "Wattage": [
+        18,
+        26,
+        32,
+        36,
+        42,
+        52,
+        58,
+        "Others"
+      ],
+      "life": 20000,
+	  "Description":"<div><b>Lamp Type</b><br/>Fluorescent</div><br/><div><b>Wattage</b><br/>Enter the luminaire's rated wattage. Typical lamp wattages include: 32, 40, 60, 110. Note that some Linear Fluorescent fixtures may have more than one lamp. Please account for multiple lamps. For example, enter 64W for a 2 lamp 32W fixture.  </div><br/><div><b>Life</b><br/>Enter the expected life in hours. 10,000 to 20,000 hours is a typical lamp life value. </div>",
+      "BCF": 1
+    }
+  ]
+}

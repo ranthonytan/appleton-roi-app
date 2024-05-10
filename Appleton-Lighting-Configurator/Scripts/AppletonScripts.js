@@ -3007,7 +3007,8 @@ function sendEmailToDistributor() {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "http://10.69.86.153/api/SendEmailToUser",
+        //"url": "http://10.69.86.153/api/SendEmailToUser",
+        "url": "https://appleton-roi-api.azurewebsites.net/api/SendEmailToUser",
         "method": "POST",
         "headers": {
             "content-type": "application/json",
@@ -3168,7 +3169,7 @@ function downloadReportAsPDF() {
         "async": false,
         "crossDomain": true,
         //"url": "http://10.69.86.153/api/DownloadReportPDF",
-        "url": "http://localhost:55191//api/DownloadReportPDF",
+        "url": "https://appleton-roi-api.azurewebsites.net/api/DownloadReportPDF",
         "method": "POST",
         "headers": {
             "content-type": "application/json",

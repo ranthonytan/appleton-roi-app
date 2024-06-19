@@ -3008,7 +3008,7 @@ function sendEmailToDistributor() {
         "async": true,
         "crossDomain": true,
         //"url": "http://10.69.86.153/api/SendEmailToUser",
-        "url": "https://zealous-sand-01b78050f.5.azurestaticapps.net/api/SendEmailToUser",
+        "url": "https://jolly-ground-09ac8eb0f-dev.eastus2.5.azurestaticapps.net//api/SendEmailToUser",
         "method": "POST",
         "headers": {
             "content-type": "application/json",
@@ -3169,7 +3169,7 @@ function downloadReportAsPDF() {
         "async": false,
         "crossDomain": true,
         //"url": "http://10.69.86.153/api/DownloadReportPDF",
-        "url": "https://zealous-sand-01b78050f.5.azurestaticapps.net/api/DownloadReportPDF",
+        "url": "https://jolly-ground-09ac8eb0f-dev.eastus2.5.azurestaticapps.net//api/DownloadReportPDF",
         "method": "POST",
         "headers": {
             "content-type": "application/json",
